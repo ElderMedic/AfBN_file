@@ -1,0 +1,36 @@
+This directory contains 3 software packages:
+* petrifier
+* petrifier-sh
+* pytrifier
+
+The first two require Java to be installed on the machine. No compilation or installation
+required. They find attractors in boolean or multi-level networks using a Petri net approach.
+
+PETRIFIER (the software we used last year) can be run by just double-clicking
+on the jar package or with the command
+'java -jar petrifier.jar' (a gray window should show up).
+
+PETRIFIER-SH is a command line (and optimized) version of Petrifier. The test command line
+'java -jar petrifier-sh.jar 1 GENYSIS test.net SCC'
+should produce the following output:
+Components Found: 6
+Terminal Components Found: 2
+Comp#   A       B       C
+4       1       1       0
+4       1       1       1
+5       0       0       0
+
+PYTRIFIER is a python script that runs simulations of Petri nets using an approximated maximally parallel
+semantics. No compilation or installation is required but it depends on python and the python packages
+networkx, numpy and mathplotlib. Furthermore, in order to edit the input file for this script I suggest to use Snoopy,
+freely available for any platform at http://www-dssz.informatik.tu-cottbus.de/DSSZ/Software/Snoopy#downloads
+The test command line
+'python pytrifier.py -N test.spstochpn -t -c 100 -m 200 -w 5 A B C'
+should show a window with a plot.
+
+The test command line
+'python pytrifier.py -N test.spstochpn -a -c 100 -m 200'
+should create an html file in the folder. The html file can be opened with a (recent) browser to see an animated
+Petri net. If the Petri net is not shown then you have to make sure to allow Flash to run from the local filesystem
+changing your security settings in
+http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html

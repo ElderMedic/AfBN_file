@@ -1,0 +1,512 @@
+p 170.0 1080.0 APC 2 n
+p 240.0 1020.0 AXIN 3 n
+p 210.0 1580.0 BCat 0 s
+p 930.0 1400.0 BCat1433CBY 0 s
+p 1130.0 1480.0 BCatCBY 0 n
+p 310.0 1410.0 BCatP4 0 n
+p 1640.0 570.0 BpV 0 n
+p 1200.0 1480.0 CBY 0 n
+p 170.0 340.0 CELSR 0 n
+p 210.0 890.0 CK1 2 n
+p 170.0 420.0 CTHRC1 0 n
+p 1350.0 210.0 Cdc42 0 n
+p 770.0 220.0 DAAM1 0 n
+p 170.0 820.0 DALLY 4 n
+p 610.0 580.0 DALLYDKK1 0 n
+p 550.0 200.0 DAPPER1 0 n
+p 990.0 1340.0 DKK1 0 n
+p 470.0 200.0 DVL1 0 s
+p 550.0 500.0 DVL13 5 s
+p 630.0 200.0 DVL3 0 s
+p 470.0 1410.0 DestrC 0 n
+p 170.0 580.0 FRIZZLED 3 s
+p 470.0 500.0 FRZLDDKK1 0 n
+p 370.0 580.0 FRZLDLRP56 1 s
+p 390.0 340.0 FRZVANGL 0 n
+p 1200.0 120.0 GaO1 2 s
+p 1160.0 120.0 GaO2 1 s
+p 1120.0 120.0 GaO3 2 s
+p 1080.0 120.0 GaO4 2 s
+p 1040.0 210.0 GalphaO 0 n
+p 1040.0 950.0 GalphaQ 0 n
+p 170.0 1220.0 I2 0 n
+p 680.0 1320.0 JNK2BCat 0 s
+p 170.0 680.0 LRP56 2 n
+p 1520.0 1160.0 OA 0 n
+p 1280.0 1400.0 P1433 0 s
+p 1520.0 790.0 PI3K 0 n
+p 170.0 1150.0 PP1 3 n
+p 280.0 180.0 PRICKLE 0 n
+p 900.0 220.0 PROFILIN1 0 n
+p 1270.0 350.0 RAC1 0 n
+p 280.0 100.0 SFBM 0 n
+p 910.0 1490.0 TCFLEF 0 n
+p 760.0 1490.0 TCFLEFdegrader 1 s
+p 930.0 1150.0 US28 0 n
+p 1150.0 1320.0 US28P1433 0 n
+p 1280.0 1250.0 US28R129A 0 n
+p 170.0 260.0 VANGL 0 n
+p 170.0 500.0 WNT 0 n
+p 470.0 740.0 WNTFRZLD 0 n
+p 450.0 420.0 WNTFRZLDPCP 0 n
+p 1520.0 930.0 Y27632 0 n
+p 1200.0 1090.0 aAKT 0 n
+p 670.0 580.0 aDVL 0 s
+p 390.0 1320.0 aGSK3 5 s
+p 1000.0 470.0 aJNK1 0 s
+p 930.0 420.0 aJNK2 0 n
+p 1320.0 640.0 aPIP3 0 n
+p 1420.0 1090.0 aPP2A 0 s
+p 1410.0 570.0 aPTEN 0 n
+p 1350.0 800.0 aROCK2 0 n
+p 1040.0 640.0 aRhoA 0 n
+p 1650.0 1090.0 akt 1 n
+p 30.0 1080.0 apc 1 n
+p 30.0 1020.0 axin 1 n
+p 540.0 1080.0 bAXIN 0 n
+p 1570.0 500.0 bpv 1 n
+p 1350.0 1480.0 cby 1 s
+p 1490.0 210.0 cdc42 1 n
+p 30.0 340.0 celsr 1 n
+p 30.0 890.0 ck1 1 n
+p 30.0 420.0 cthrc1 1 n
+p 30.0 1580.0 ctnbb1 1 n
+p 770.0 50.0 daam1 1 n
+p 30.0 820.0 dally 1 n
+p 550.0 50.0 dapper1 1 n
+p 1070.0 1470.0 dkk1 1 n
+p 470.0 50.0 dvl1 1 n
+p 630.0 50.0 dvl3 1 n
+p 30.0 580.0 frizzled 1 n
+p 1420.0 1400.0 g1433 1 n
+p 30.0 1280.0 gsk3 2 n
+p 30.0 1220.0 i2 1 n
+p 1520.0 1090.0 iAKT 0 n
+p 250.0 1280.0 iGSK3 0 n
+p 1350.0 280.0 iJNK1 0 n
+p 1350.0 420.0 iJNK2 0 n
+p 1520.0 720.0 iPIP3 0 n
+p 1520.0 1020.0 iPP2A 0 n
+p 1520.0 650.0 iPTEN 0 n
+p 1230.0 500.0 iROCK2 0 n
+p 1170.0 860.0 iRhoA 0 n
+p 1490.0 280.0 jnk1 1 n
+p 1490.0 420.0 jnk2 1 n
+p 30.0 680.0 lrp56 1 n
+p 990.0 1580.0 nBCat 0 s
+p 1650.0 1160.0 okadaicacid 1 n
+p 1640.0 790.0 pi3k 1 n
+p 1640.0 720.0 pip3 1 n
+p 30.0 1150.0 pp1 1 n
+p 1650.0 1020.0 pp2a 1 n
+p 310.0 1320.0 preDestrC 0 n
+p 30.0 180.0 prickle 1 n
+p 900.0 50.0 profilin1 1 n
+p 620.0 1410.0 proteasome 3 n
+p 1640.0 650.0 pten 1 n
+p 1490.0 350.0 rac1 1 n
+p 1640.0 860.0 rhoa 1 n
+p 1490.0 500.0 rock2 1 n
+p 30.0 100.0 sfbm 1 n
+t 610.0 820.0 t0 c 0 w n {DALLY DKK1 interaction} n
+t 670.0 420.0 t1 c 0 w n {GalphaO signalling} n
+t 110.0 260.0 t10 c 0 w n {vangl trans} n
+t 550.0 140.0 t11 c 0 w n {dapper1 trans} n
+t 470.0 140.0 t12 c 0 w n {dvl1 trans} n
+t 1430.0 280.0 t13 c 0 w n {jnk1 trans} n
+t 330.0 420.0 t14 c 0 w n {WNTFRZ PCP binding} n
+t 110.0 420.0 t15 c 0 w n {cthrc1 trans} n
+t 470.0 580.0 t16 c 0 w n {FRZLRP56 DKK1 interaction} n
+t 1040.0 1040.0 t17 c 0 w n {GalphaQ signalling} n
+t 1040.0 280.0 t18 c 0 w n {RhoA JNK1 activation} s
+t 1120.0 350.0 t19 c 0 w n {RAC1 JNK1 activation} s
+t 570.0 280.0 t2 c 0 w n {DVL3 antagonism} e
+t 1180.0 210.0 t20 c 0 w n {Cdc42 JNK1 activation} n
+t 1040.0 860.0 t21 c 0 w n {RhoA activation by GaQ} n
+t 1420.0 500.0 t22 c 0 w n {rock2 trans} n
+t 1230.0 800.0 t23 c 0 w n {ROCK2 activation by RhoA} n
+t 1420.0 1020.0 t24 c 0 w n {PP2A activation} n
+t 630.0 140.0 t25 c 0 w n {dvl3 trans} n
+t 550.0 400.0 t26 c 0 w n {DVL 1 3 association} s
+t 280.0 580.0 t27 c 0 w n {FRZLD LRP56 interaction} n
+t 1150.0 1220.0 t28 c 0 w n {US28 binds P1433} s
+t 1080.0 1320.0 t29 c 0 w n {US28P1433 binds CBY} s
+t 990.0 1260.0 t3 c 0 w n {DKK1 degradation} n
+t 1280.0 1150.0 t30 c 0 w n {us28r129a trans} n
+t 1280.0 1320.0 t31 0 w n
+t 110.0 100.0 t32 c 0 w n {sfbm trans} n
+t 1320.0 570.0 t33 c 0 w n {pip3 inactivation} n
+t 770.0 140.0 t34 c 0 w n {daam1 trans} n
+t 1420.0 720.0 t35 c 0 w n {PIP3 activation} nw
+t 1580.0 720.0 t36 c 0 w n {pip3 trans} n
+t 1580.0 790.0 t37 c 0 w n {pi3k trans} n
+t 1580.0 650.0 t38 c 0 w n {pten trans} n
+t 720.0 1150.0 t39 c 0 w n {GSK3B inactivation by US28} s
+t 1040.0 1150.0 t4 c 0 w n {us28 trans} n
+t 110.0 580.0 t40 c 0 w n {frizzled trans} n
+t 770.0 580.0 t41 c 0 w n {DVL activation by RhoA} s
+t 900.0 140.0 t42 c 0 w n {profilin1 trans} n
+t 840.0 220.0 t43 c 0 w n {stressfiber translocation} s
+t 110.0 180.0 t44 c 0 w n {prickle trans} n
+t 270.0 340.0 t45 c 0 w n {FRZVANGL binding} n
+t 390.0 180.0 t46 c 0 w n {DVL regulation} n
+t 530.0 280.0 t47 c 0 w n {DVL1 antagonism} w
+t 1580.0 1090.0 t48 c 0 w n {akt trans} n
+t 1320.0 1020.0 t49 c 0 w n {AKT activation} n
+t 110.0 340.0 t5 c 0 w n {celsr trans} n
+t 1320.0 1090.0 t50 c 0 w n {AKT inactivation} n
+t 1580.0 1020.0 t51 c 0 w n {pp2a trans} n
+t 1350.0 1400.0 t52 c 0 w n {g1433 trans} n
+t 1280.0 1480.0 t53 c 0 w n {cby trans} s
+t 1200.0 1400.0 t54 c 0 w n {CBY-BCat bind 14-3-3} n
+t 570.0 1580.0 t55 c 10 w n {BCat nucl. transport} s
+t 330.0 500.0 t56 c 0 w n {WNTDallyFRZ PCP binding} n
+t 1270.0 420.0 t57 c 0 w n {JNK2 activation} s
+t 1200.0 1580.0 t58 c 0 w n {CBY-BCat binding} s
+t 990.0 1490.0 t59 c 0 w n {tcflef trans} n
+t 1430.0 210.0 t6 c 0 w n {cdc42 trans} n
+t 830.0 1490.0 t60 c 0 w n {TCFLEF degr} n
+t 110.0 500.0 t61 c 0 w n {wnt trans} n
+t 110.0 890.0 t62 c 0 w n {ck1 trans} n
+t 110.0 1020.0 t63 c 0 w n {axin trans} n
+t 110.0 1280.0 t64 c 0 w n {gsk3 trans} n
+t 370.0 740.0 t65 c 0 w n {WNTFRZ Canonical binding} s
+t 110.0 820.0 t66 c 0 w n {dally trans} n
+t 110.0 680.0 t67 c 0 w n {lrp56 trans} n
+t 110.0 1580.0 t68 c 0 w n {ctnbb1 trans} n
+t 310.0 1080.0 t69 c 0 w n {destr. complex form} n
+t 1430.0 350.0 t7 c 0 w n {rac1 trans} n
+t 110.0 1080.0 t70 c 0 w n {apc trans} n
+t 210.0 1410.0 t71 c 10 w w {BCat phosphorylation} n
+t 850.0 1400.0 t72 c 0 w n {BCat cyto transport} n
+t 1410.0 650.0 t73 c 0 w n {PTEN activation} n
+t 390.0 1410.0 t74 c 0 w n {BCat DestrC binding} s
+t 540.0 1410.0 t75 c 0 w n {BCat ubiquitination} s
+t 1430.0 420.0 t76 c 0 w n {jnk2 trans} n
+t 540.0 1320.0 t77 c 0 w n {BCatJNK2 binding} n
+t 680.0 1410.0 t78 c 0 w n {JNK2BCat destruction} s
+t 680.0 1090.0 t79 c 0 w n {GSK3B inactivation by AKT} n
+t 1580.0 860.0 t8 c 0 w n {rhoa trans} n
+t 470.0 1080.0 t80 c 0 w n {AXIN recruitment} n
+t 250.0 1200.0 t81 c 0 w n {PP1 regulation} s
+t 540.0 1000.0 t82 c 0 w n {AXIN degr} e
+t 110.0 1220.0 t83 c 0 w n {i2 trans} n
+t 390.0 1150.0 t84 c 0 w n {GSK3 activation} n
+t 110.0 1150.0 t85 c 0 w n {pp1 trans} n
+t 1420.0 1160.0 t86 c 50 w w {aPP2A inhibition by OA} s
+t 1580.0 1160.0 t87 c 0 w n {oa trans} n
+t 1580.0 930.0 t88 c 0 w n {y27632 trans} n
+t 1440.0 930.0 t89 c 50 w s {ROCK2 inhibition} n
+t 1170.0 640.0 t9 c 0 w n {rhoa activation} n
+t 1640.0 500.0 t90 c 0 w n {bpv trans} n
+t 1520.0 570.0 t91 c 50 w w {aPTEN inhibition by BpV} n
+t 1160.0 50.0 t92 c 0 w n Gao1 n
+t 1120.0 50.0 t93 c 0 w n Gao2 n
+t 1080.0 50.0 t94 c 0 w n Gao3 n
+t 1040.0 50.0 t95 c 0 w n Gao4 n
+p 1070.0 1510.0 tcflef 1 s
+p 1110.0 1150.0 us28 1 n
+p 1160.0 1150.0 us28r129a 1 n
+p 30.0 260.0 vangl 1 n
+p 30.0 500.0 wnt 1 n
+p 1650.0 930.0 y27632 1 n
+e DAPPER1 t2 5 n
+e nBCat t58 3 n
+e t36 iPIP3 1 n
+e t78 proteasome 1 n
+e iJNK1 t20 5 se
+e PROFILIN1 t43 5 n
+e aPTEN t33 1 n
+e t85 pp1 1 n
+e t12 DVL1 1 n
+e t73 aPTEN 3 w
+e t94 GaO4 3 w
+e t16 FRZLDDKK1 3 e
+e CK1 t71 2 sw
+e t66 dally 1 n
+e CK1 t80 1 n
+e celsr t5 1 n
+e P1433 t31 1 n
+e t77 BCat 1 n
+e t49 aAKT 4 n
+e t44 prickle 1 n
+e aPP2A t50 1 n
+e t83 I2 1 n
+e ck1 t62 1 n
+e I2 t81 5 s
+e t56 WNTFRZLDPCP 2 sw
+e t53 CBY 1 n
+e iGSK3 t84 2 se
+e GalphaO t20 3 n
+e t51 pp2a 1 n
+e t81 PP1 1 n
+e t7 RAC1 1 n
+e aDVL t1 1 n
+e us28 t4 1 n
+e t54 BCat1433CBY 1 n
+e pp1 t85 1 n
+e GalphaO t57 5 e
+e aGSK3 t77 1 n
+e preDestrC t74 5 e
+e t62 CK1 1 n
+e pip3 t36 1 n
+e FRZLDLRP56 t16 1 n
+e t59 DKK1 1 n
+e nBCat t59 1 n
+e cdc42 t6 1 n
+e t9 aRhoA 3 n
+e t32 sfbm 1 n
+e t11 dapper1 1 n
+e GaO1 t92 1 n
+e t80 bAXIN 1 n
+e t5 CELSR 1 n
+e t51 iPP2A 1 n
+e dvl3 t25 1 n
+e proteasome t78 1 n
+e aAKT t54 2 w
+e t24 aPP2A 3 w
+e dally t66 1 n
+e t25 DVL3 1 n
+e t15 cthrc1 1 n
+e GalphaQ t21 1 n
+e OA t86 3 n
+e t8 iRhoA 1 n
+e aROCK2 t89 1 n
+e t32 SFBM 1 n
+e iROCK2 t23 2 s
+e t52 g1433 1 n
+e t30 US28R129A 1 n
+e aPTEN t91 1 n
+e aPP2A t86 1 n
+e AXIN t69 2 w
+e t53 cby 1 n
+e t26 DVL13 3 e
+e P1433 t28 3 n
+e TCFLEFdegrader t60 1 n
+e dvl1 t12 1 n
+e jnk2 t76 1 n
+e t10 VANGL 1 n
+e t41 aDVL 5 ne
+e iRhoA t9 2 nw
+e BCat1433CBY t72 2 n
+e t74 DestrC 5 n
+e t76 jnk2 1 n
+e t6 cdc42 1 n
+e t6 Cdc42 1 n
+e rhoa t8 1 n
+e US28 t39 5 n
+e t76 iJNK2 1 n
+e WNTFRZLDPCP t1 1 n
+e GaO4 t95 6 w
+e lrp56 t67 1 n
+e okadaicacid t87 1 n
+e iPP2A t24 2 n
+e DKK1 t0 3 e
+e t48 akt 1 n
+e pp2a t51 1 n
+e US28P1433 t29 3 n
+e aPIP3 t49 5 nw
+e BCat t77 5 ne
+e t7 rac1 1 n
+e aGSK3 t69 3 se
+e t77 JNK2BCat 1 n
+e rock2 t22 1 n
+e iJNK1 t19 5 ne
+e bAXIN t82 5 w
+e CTHRC1 t14 2 n
+e aGSK3 t71 3 e
+e t87 okadaicacid 1 n
+e akt t48 1 n
+e Cdc42 t20 5 ne
+e jnk1 t13 1 n
+e DVL13 t46 4 n
+e CELSR t45 2 sw
+e t5 celsr 1 n
+e dkk1 t59 1 n
+e aRhoA t23 4 n
+e t11 DAPPER1 1 n
+e t40 frizzled 1 n
+e US28R129A t31 6 e
+e t38 iPTEN 1 n
+e tcflef t59 1 n
+e profilin1 t42 1 n
+e t93 GaO3 1 n
+e CBY t58 2 n
+e aJNK2 t77 3 w
+e t87 OA 1 n
+e DVL1 t26 2 w
+e t57 aJNK2 2 n
+e t69 preDestrC 3 ne
+e aJNK1 t72 4 n
+e t67 LRP56 2 n
+e PP1 t81 3 w
+e DKK1 t3 4 e
+e t52 P1433 1 n
+e t68 BCat 1 n
+e t70 APC 1 n
+e t58 BCatCBY 1 n
+e DALLY t0 2 s
+e t10 vangl 1 n
+e t22 rock2 1 n
+e WNTFRZLD t80 1 n
+e FRZLDLRP56 t65 1 n
+e t90 bpv 1 n
+e WNT t14 1 n
+e t45 FRIZZLED 4 w
+e FRIZZLED t14 1 n
+e daam1 t34 1 n
+e DestrC t75 1 n
+e GalphaO t18 3 w
+e t38 pten 1 n
+e WNT t65 1 n
+e t13 jnk1 1 n
+e iJNK2 t57 3 se
+e apc t70 1 n
+e t25 dvl3 1 n
+e t59 TCFLEF 3 se
+e GalphaO t19 3 n
+e WNT t56 1 n
+e cby t53 1 n
+e aGSK3 t80 1 n
+e aDVL t80 1 n
+e t15 CTHRC1 1 n
+e iPTEN t73 3 s
+e DALLY t65 1 n
+e t90 BpV 1 n
+e BpV t91 1 n
+e t37 PI3K 1 n
+e y27632 t88 1 n
+e BCatCBY t54 2 e
+e t88 y27632 1 n
+e t35 aPIP3 4 ne
+e t88 Y27632 1 n
+e proteasome t75 1 n
+e Y27632 t89 6 s
+e bpv t90 1 n
+e aPIP3 t33 4 w
+e t31 US28P1433 1 n
+e t4 US28 1 n
+e t59 dkk1 1 n
+e t4 us28 1 n
+e t40 FRIZZLED 4 n
+e t67 lrp56 1 n
+e t12 dvl1 1 n
+e aAKT t79 4 nw
+e aGSK3 t79 4 e
+e t54 aAKT 1 n
+e rac1 t7 1 n
+e VANGL t45 1 n
+e FRIZZLED t27 1 n
+e t79 aAKT 3 ne
+e PP1 t84 1 n
+e RAC1 t19 5 se
+e pten t38 1 n
+e RAC1 t57 3 e
+e aROCK2 t24 3 sw
+e t79 iGSK3 1 n
+e t39 iGSK3 1 n
+e iRhoA t21 1 n
+e g1433 t52 1 n
+e FRIZZLED t45 5 n
+e BCat t71 3 sw
+e t95 GalphaO 4 ne
+e AXIN t80 1 n
+e t45 FRZVANGL 1 n
+e t48 iAKT 1 n
+e t65 WNTFRZLD 4 n
+e t68 ctnbb1 1 n
+e t66 DALLY 1 n
+e CBY t29 2 w
+e aRhoA t18 2 sw
+e t63 AXIN 1 n
+e FRZLDDKK1 t56 2 s
+e wnt t61 1 n
+e t44 PRICKLE 1 n
+e BCat t55 5 n
+e DAAM1 t43 2 n
+e t36 pip3 1 n
+e t60 TCFLEFdegrader 1 n
+e iJNK1 t18 1 n
+e t92 GaO1 1 n
+e SFBM t46 5 w
+e aAKT t50 1 n
+e PRICKLE t46 5 sw
+e aGSK3 t39 2 sw
+e t20 aJNK1 1 n
+e t55 BCat 2 s
+e DVL3 t2 2 n
+e t59 tcflef 1 n
+e t24 aROCK2 1 n
+e t92 GaO2 1 n
+e pi3k t37 1 n
+e BCatP4 t74 3 nw
+e sfbm t32 1 n
+e GaO2 t93 6 s
+e t22 iROCK2 2 n
+e TCFLEF t60 1 n
+e t61 wnt 1 n
+e t0 DALLYDKK1 3 sw
+e iAKT t49 1 n
+e DALLYDKK1 t16 2 n
+e LRP56 t27 1 n
+e t71 BCatP4 2 sw
+e t75 proteasome 1 n
+e t73 aROCK2 1 n
+e GaO3 t94 6 s
+e US28 t28 5 n
+e t70 apc 1 n
+e t84 aGSK3 2 n
+e dapper1 t11 1 n
+e cthrc1 t15 1 n
+e DAPPER1 t47 5 n
+e JNK2BCat t78 5 e
+e t21 aRhoA 1 n
+e t61 WNT 2 n
+e aPIP3 t9 5 n
+e t27 FRZLDLRP56 2 n
+e prickle t44 1 n
+e t18 aJNK1 1 n
+e iPIP3 t35 2 n
+e APC t69 1 n
+e DVL1 t47 2 n
+e US28 t17 5 w
+e t23 aROCK2 5 w
+e P1433 t54 5 n
+e t19 aJNK1 1 n
+e DVL13 t41 1 n
+e t13 iJNK1 1 n
+e t8 rhoa 1 n
+e t83 i2 1 n
+e FRZVANGL t46 4 w
+e t42 profilin1 1 n
+e t85 PP1 1 n
+e t64 iGSK3 1 n
+e t42 PROFILIN1 1 n
+e t62 ck1 1 n
+e t64 gsk3 1 n
+e t34 daam1 1 n
+e t1 GalphaO 4 n
+e t72 BCat 1 n
+e i2 t83 1 n
+e t34 DAAM1 1 n
+e aROCK2 t73 3 e
+e t30 us28r129a 1 n
+e t55 nBCat 5 se
+e frizzled t40 1 n
+e gsk3 t64 1 n
+e t17 GalphaQ 2 w
+e t37 pi3k 1 n
+e vangl t10 1 n
+e us28r129a t30 1 n
+e DVL3 t26 2 e
+e ctnbb1 t68 1 n
+e t14 WNTFRZLDPCP 2 n
+e aRhoA t41 1 n
+e PI3K t35 2 s
+e t63 axin 1 n
+e axin t63 1 n
+e DAAM1 t41 2 w
+e t28 US28P1433 1 n
+h bcatmodel
+
+

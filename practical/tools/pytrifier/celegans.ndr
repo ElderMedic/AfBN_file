@@ -1,0 +1,1626 @@
+#    Petri Net model of C. elegans Vulval Developmeni
+#    (C) Copyright 2008 Vrije Universiteit -
+#        - H.Bal, N.Bonzanni, A.Feenstra, W.Fokkink, J.Heringa, T.Kielmann, E.Krepska
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+p 4010.0 30.0 aP6 1 n AC w
+t 4530.0 590.0 at77 0 w n
+t 4010.0 280.0 at71 c 0 w n {LIN-3 PRO/AC} w
+t 4010.0 170.0 aT25 c 0 w n {AC A} w
+p 4010.0 380.0 ap73 0 n
+p 4010.0 220.0 aP28 0 n {AC ACT} w
+t 4120.0 590.0 a76 0 w n
+p 4350.0 590.0 ap76_ 0 n {LIN-3/P6-7.p} ne
+t 3900.0 590.0 at74 0 w n
+p 3700.0 590.0 ap75_ 0 n {LIN-3/P5-6.p} ne
+t 3520.0 590.0 at75 0 w n
+t 370.0 1010.0 P3t5 c 0 w n {LET-60 A/P3.p} s
+t 1570.0 1010.0 P4t5 c 0 w n {LET-60 A/P4.p} s
+t 2770.0 1010.0 P5t5 c 0 w n {LET-60 A/P5.p} s
+t 3970.0 1010.0 P6t5 c 0 w n {LET-60 A/P6.p} s
+t 5170.0 1010.0 P7t5 c 0 w n {LET-60 A/P7.p} s
+t 6370.0 1010.0 P8t5 c 0 w n {LET-60 A/P8.p} s
+t 410.0 750.0 P3t23 c 0 w n {LET-23 A/P3.p} w
+t 1610.0 750.0 P4t23 c 0 w n {LET-23 A/P4.p} w
+t 2810.0 750.0 P5t23 c 0 w n {LET-23 A/P5.p} w
+t 4010.0 750.0 P6t23 c 0 w n {LET-23 A/P6.p} w
+t 5210.0 750.0 P7t23 c 0 w n {LET-23 A/P7.p} w
+t 6410.0 750.0 P8t23 c 0 w n {LET-23 A/P8.p} w
+p 450.0 1080.0 P3p31 1 n {mpk-1(wt)/P3.p} s
+p 1650.0 1080.0 P4p31 1 n {mpk-1(wt)/P4.p} s
+p 2850.0 1080.0 P5p31 1 n {mpk-1(wt)/P5.p} s
+p 4050.0 1080.0 P6p31 1 n {mpk-1(wt)/P6.p} s
+p 5250.0 1080.0 P7p31 1 n {mpk-1(wt)/P7.p} s
+p 6450.0 1080.0 P8p31 1 n {mpk-1(wt)/P8.p} s
+p 450.0 1250.0 P3p32 5 n {MPK-1/P3.p} s
+p 1650.0 1250.0 P4p32 5 n {MPK-1/P4.p} s
+p 2850.0 1250.0 P5p32 5 n {MPK-1/P5.p} s
+p 5250.0 1250.0 P7p32 5 n {MPK-1/P7.p} s
+p 6450.0 1250.0 P8p32 5 n {MPK-1/P8.p} s
+t 370.0 1250.0 P3t19 c 0 w n {MPK-1 A/P3.p} s
+t 1570.0 1250.0 P4t19 c 0 w n {MPK-1 A/P4.p} s
+t 2770.0 1250.0 P5t19 c 0 w n {MPK-1 A/P5.p} s
+t 3970.0 1250.0 P6t19 c 0 w n {MPK-1 A/P6.p} s
+t 5170.0 1250.0 P7t19 c 0 w n {MPK-1 A/P7.p} s
+t 6370.0 1250.0 P8t19 c 0 w n {MPK-1 A/P8.p} s
+p 370.0 1110.0 P3p18 0 n {LET-60 ACT/P3.p} w
+p 1570.0 1110.0 P4p18 0 n {LET-60 ACT/P4.p} w
+p 2770.0 1110.0 P5p18 0 n {LET-60 ACT/P5.p} w
+p 3970.0 1110.0 P6p18 0 n {LET-60 ACT/P6.p} w
+p 5170.0 1110.0 P7p18 0 n {LET-60 ACT/P7.p} w
+p 6370.0 1110.0 P8p18 0 n {LET-60 ACT/P8.p} w
+p 300.0 830.0 P3p10 5 n {SEM-5/P3.p} w
+p 1500.0 830.0 P4p10 5 n {SEM-5/P4.p} w
+p 2700.0 830.0 P5p10 5 n {SEM-5/P5.p} w
+p 3900.0 830.0 P6p10 5 n {SEM-5/P6.p} w
+p 5100.0 830.0 P7p10 5 n {SEM-5/P7.p} w
+p 6300.0 830.0 P8p10 5 n {SEM-5/P8.p} w
+t 370.0 830.0 P3t20 c 0 w n {SEM-5 A/P3.p} n
+t 1570.0 830.0 P4t20 c 0 w n {SEM-5 A/P4.p} n
+t 2770.0 830.0 P5t20 c 0 w n {SEM-5 A/P5.p} n
+t 3970.0 830.0 P6t20 c 0 w n {SEM-5 A/P6.p} n
+t 5170.0 830.0 P7t20 c 0 w n {SEM-5 A/P7.p} n
+t 6370.0 830.0 P8t20 c 0 w n {SEM-5 A/P8.p} n
+p 410.0 830.0 P3p19 0 n {LET-23 ACT/P3.p} se
+p 1610.0 830.0 P4p19 0 n {LET-23 ACT/P4.p} se
+p 2810.0 830.0 P5p19 0 n {LET-23 ACT/P5.p} se
+p 4010.0 830.0 P6p19 0 n {LET-23 ACT/P6.p} se
+p 5210.0 830.0 P7p19 0 n {LET-23 ACT/P7.p} se
+p 6410.0 830.0 P8p19 0 n {LET-23 ACT/P8.p} se
+p 370.0 1400.0 P3p24 0 n {MPK-1 ACT/P3.p} se
+p 2770.0 1400.0 P5p24 0 n {MPK-1 ACT/P5.p} se
+p 5170.0 1400.0 P7p24 0 n {MPK-1 ACT/P7.p} se
+p 6370.0 1400.0 P8p24 0 n {MPK-1 ACT/P8.p} se
+t 450.0 1170.0 P3t10 c 0 w n {MPK-1 PRO/P3.p} s
+t 1650.0 1170.0 P4t10 c 0 w n {MPK-1 PRO/P4.p} s
+t 2850.0 1170.0 P5t10 c 0 w n {MPK-1 PRO/P5.p} s
+t 4050.0 1170.0 P6t10 c 0 w n {MPK-1 PRO/P6.p} s
+t 5250.0 1170.0 P7t10 c 0 w n {MPK-1 PRO/P7.p} s
+t 6450.0 1170.0 P8t10 c 0 w n {MPK-1 PRO/P8.p} s
+t 480.0 810.0 P3t15 c 0 w n {LET-23 PRO/P3.p} n
+t 1680.0 810.0 P4t15 c 0 w n {LET-23 PRO/P4.p} n
+t 2880.0 810.0 P5t15 c 0 w n {LET-23 PRO/P5.p} n
+t 4080.0 810.0 P6t15 c 0 w n {LET-23 PRO/P6.p} n
+t 5280.0 810.0 P7t15 c 0 w n {LET-23 PRO/P7.p} n
+t 6480.0 810.0 P8t15 c 0 w n {LET-23 PRO/P8.p} n
+t 370.0 1860.0 P3t31 c 0 w n {DSL UR/P3.p} se
+t 2770.0 1860.0 P5t31 c 0 w n {DSL UR/P5.p} se
+t 3970.0 1860.0 P6t31 c 0 w n {DSL UR/P6.p} se
+t 5170.0 1860.0 P7t31 c 0 w n {DSL UR/P7.p} se
+t 6370.0 1860.0 P8t31 c 0 w n {DSL UR/P8.p} se
+t 440.0 2040.0 P3t22 0 w n
+t 1640.0 2040.0 P4t22 0 w n
+t 2840.0 2040.0 P5t22 0 w n
+t 4040.0 2040.0 P6t22 0 w n
+t 5240.0 2040.0 P7t22 0 w n
+t 6440.0 2040.0 P8t22 0 w n
+p 40.0 2040.0 aP3p29_ 0 n {DSL/P2-3.p} s
+p 650.0 880.0 P3p38 1 n {dpy-23(wt)/P3.p} e
+p 1850.0 880.0 P4p38 1 n {dpy-23(wt)/P4.p} e
+p 3050.0 880.0 P5p38 1 n {dpy-23(wt)/P5.p} e
+p 4250.0 880.0 P6p38 1 n {dpy-23(wt)/P6.p} e
+p 5450.0 880.0 P7p38 1 n {dpy-23(wt)/P7.p} e
+p 6650.0 880.0 P8p38 1 n {dpy-23(wt)/P8.p} e
+p 5860.0 2040.0 aP7P15_ 0 n {DSL/P7-8.p} s
+p 7060.0 2040.0 aP8P15_ 0 n {DSL/P8-9.p} s
+t 630.0 2040.0 P3t21 0 w n
+t 1830.0 2040.0 P4t21 0 w n
+t 3030.0 2040.0 P5t21 0 w n
+t 4230.0 2040.0 P6t21 0 w n
+t 5430.0 2040.0 P7t21 0 w n
+t 6630.0 2040.0 P8t21 0 w n
+p 530.0 1860.0 P3p25 0 w {DSL/P3.p} e
+p 1730.0 1860.0 P4p25 0 w {DSL/P4.p} n
+p 2930.0 1860.0 P5p25 0 w {DSL/P5.p} e
+p 5330.0 1860.0 P7p25 0 w {DSL/P7.p} e
+p 6530.0 1860.0 P8p25 0 w {DSL/P8.p} e
+t 610.0 1680.0 P3t26 c 0 w n {LIN-12 AL/P3.p} w
+t 1810.0 1680.0 P4t26 c 0 w n {LIN-12 AL/P4.p} w
+t 3010.0 1680.0 P5t26 c 0 w n {LIN-12 AL/P5.p} w
+t 4210.0 1680.0 P6t26 c 0 w n {LIN-12 AL/P6.p} w
+t 5410.0 1680.0 P7t26 c 0 w n {LIN-12 AL/P7.p} w
+t 6610.0 1680.0 P8t26 c 0 w n {LIN-12 AL/P8.p} w
+t 840.0 1330.0 P3t253 50 w n
+t 2040.0 1330.0 P4t253 50 w n
+t 3240.0 1330.0 P5t253 50 w n
+t 4440.0 1330.0 P6t253 50 w n
+t 5640.0 1330.0 P7t253 50 w n
+t 6840.0 1330.0 P8t253 50 w n
+t 840.0 1220.0 P3t254 c 50 w n {LIN-12 DR/P3.p} s
+t 2040.0 1220.0 P4t254 c 50 w n {LIN-12 DR/P4.p} s
+t 3240.0 1220.0 P5t254 c 50 w n {LIN-12 DR/P5.p} s
+t 4440.0 1220.0 P6t254 c 50 w n {LIN-12 DR/P6.p} s
+t 5640.0 1220.0 P7t254 c 50 w n {LIN-12 DR/P7.p} s
+t 6840.0 1220.0 P8t254 c 50 w n {LIN-12 DR/P8.p} s
+p 540.0 1430.0 P3p163 1 n
+p 1740.0 1430.0 P4p163 1 n
+p 2940.0 1430.0 P5p163 1 n
+p 4140.0 1430.0 P6p163 1 n
+p 5340.0 1430.0 P7p163 1 n
+p 6540.0 1430.0 P8p163 1 n
+t 570.0 1430.0 P3t266 0 w n
+t 1770.0 1430.0 P4t266 0 w n
+t 2970.0 1430.0 P5t266 0 w n
+t 4170.0 1430.0 P6t266 0 w n
+t 5370.0 1430.0 P7t266 0 w n
+t 6570.0 1430.0 P8t266 0 w n
+t 540.0 1470.0 P3t267 0 w n
+t 1740.0 1470.0 P4t267 0 w n
+t 2940.0 1470.0 P5t267 0 w n
+t 4140.0 1470.0 P6t267 0 w n
+t 5340.0 1470.0 P7t267 0 w n
+t 6540.0 1470.0 P8t267 0 w n
+p 570.0 1470.0 P3p164 0 n
+p 1770.0 1470.0 P4p164 0 n
+p 2970.0 1470.0 P5p164 0 n
+p 4170.0 1470.0 P6p164 0 n
+p 5370.0 1470.0 P7p164 0 n
+p 6570.0 1470.0 P8p164 0 n
+p 540.0 1510.0 P3p165_ 0 n
+p 1740.0 1510.0 P4p165_ 0 n
+p 2940.0 1510.0 P5p165_ 0 n
+p 4140.0 1510.0 P6p165_ 0 n
+p 5340.0 1510.0 P7p165_ 0 n
+p 6540.0 1510.0 P8p165_ 0 n
+t 570.0 1510.0 P3t268 0 w n
+t 1770.0 1510.0 P4t268 0 w n
+t 2970.0 1510.0 P5t268 0 w n
+t 4170.0 1510.0 P6t268 0 w n
+t 5370.0 1510.0 P7t268 0 w n
+t 6570.0 1510.0 P8t268 0 w n
+p 300.0 1400.0 P3p166 1 n
+p 1500.0 1400.0 P4p166 1 n
+p 2700.0 1400.0 P5p166 1 n
+p 3900.0 1400.0 P6p166 1 n
+p 5100.0 1400.0 P7p166 1 n
+p 6300.0 1400.0 P8p166 1 n
+t 330.0 1400.0 P3t269 0 w n
+t 1530.0 1400.0 P4t269 0 w n
+t 2730.0 1400.0 P5t269 0 w n
+t 3930.0 1400.0 P6t269 0 w n
+t 5130.0 1400.0 P7t269 0 w n
+t 6330.0 1400.0 P8t269 0 w n
+t 300.0 1440.0 P3t270 0 w n
+t 1500.0 1440.0 P4t270 0 w n
+t 2700.0 1440.0 P5t270 0 w n
+t 3900.0 1440.0 P6t270 0 w n
+t 5100.0 1440.0 P7t270 0 w n
+t 6300.0 1440.0 P8t270 0 w n
+p 330.0 1440.0 P3p167 0 n
+p 1530.0 1440.0 P4p167 0 n
+p 2730.0 1440.0 P5p167 0 n
+p 3930.0 1440.0 P6p167 0 n
+p 5130.0 1440.0 P7p167 0 n
+p 6330.0 1440.0 P8p167 0 n
+p 300.0 1480.0 P3p168_ 0 n
+p 1500.0 1480.0 P4p168_ 0 n
+p 2700.0 1480.0 P5p168_ 0 n
+p 3900.0 1480.0 P6p168_ 0 n
+p 5100.0 1480.0 P7p168_ 0 n
+p 6300.0 1480.0 P8p168_ 0 n
+t 330.0 1480.0 P3t271 0 w n
+t 1530.0 1480.0 P4t271 0 w n
+t 2730.0 1480.0 P5t271 0 w n
+t 3930.0 1480.0 P6t271 0 w n
+t 5130.0 1480.0 P7t271 0 w n
+t 6330.0 1480.0 P8t271 0 w n
+p 300.0 1010.0 P3p17 5 n {LET-60/P3.p} w
+p 1500.0 1010.0 P4p17 5 n {LET-60/P4.p} w
+p 2700.0 1010.0 P5p17 5 n {LET-60/P5.p} w
+p 3900.0 1010.0 P6p17 5 n {LET-60/P6.p} w
+p 5100.0 1010.0 P7p17 5 n {LET-60/P7.p} w
+p 6300.0 1010.0 P8p17 5 n {LET-60/P8.p} w
+t 260.0 970.0 P3t6 c 0 w n {LET-60 PRO/P3.p} w
+t 1460.0 970.0 P4t6 c 0 w n {LET-60 PRO/P4.p} w
+t 2660.0 970.0 P5t6 c 0 w n {LET-60 PRO/P5.p} w
+t 3860.0 970.0 P6t6 c 0 w n {LET-60 PRO/P6.p} w
+t 5060.0 970.0 P7t6 c 0 w n {LET-60 PRO/P7.p} w
+t 6260.0 970.0 P8t6 c 0 w n {LET-60 PRO/P8.p} w
+t 260.0 790.0 P3t7 c 0 w n {SEM-5 PRO/P3.p} w
+t 1460.0 790.0 P4t7 c 0 w n {SEM-5 PRO/P4.p} w
+t 2660.0 790.0 P5t7 c 0 w n {SEM-5 PRO/P5.p} w
+t 3860.0 790.0 P6t7 c 0 w n {SEM-5 PRO/P6.p} w
+t 5060.0 790.0 P7t7 c 0 w n {SEM-5 PRO/P7.p} w
+t 6260.0 790.0 P8t7 c 0 w n {SEM-5 PRO/P8.p} w
+p 300.0 750.0 P3p16 1 n {sem-5(wt)/P3.p} w
+p 1500.0 750.0 P4p16 1 n {sem-5(wt)/P4.p} w
+p 2700.0 750.0 P5p16 1 n {sem-5(wt)/P5.p} w
+p 3900.0 750.0 P6p16 1 n {sem-5(wt)/P6.p} w
+p 5100.0 750.0 P7p16 1 n {sem-5(wt)/P7.p} w
+p 6300.0 750.0 P8p16 1 n {sem-5(wt)/P8.p} w
+p 300.0 930.0 P3p15 1 n {let-60(wt)/P3.p} w
+p 1500.0 930.0 P4p15 1 n {let-60(wt)/P4.p} w
+p 2700.0 930.0 P5p15 1 n {let-60(wt)/P5.p} w
+p 3900.0 930.0 P6p15 1 n {let-60(wt)/P6.p} w
+p 5100.0 930.0 P7p15 1 n {let-60(wt)/P7.p} w
+p 6300.0 930.0 P8p15 1 n {let-60(wt)/P8.p} w
+t 520.0 1200.0 P3t116 500 w s
+t 1720.0 1200.0 P4t116 500 w s
+t 2920.0 1200.0 P5t116 500 w s
+t 5320.0 1200.0 P7t116 500 w s
+t 6520.0 1200.0 P8t116 500 w s
+p 490.0 910.0 P3p208 1 n
+p 1690.0 910.0 P4p208 1 n
+p 2890.0 910.0 P5p208 1 n
+p 4090.0 910.0 P6p208 1 n
+p 5290.0 910.0 P7p208 1 n
+p 6490.0 910.0 P8p208 1 n
+t 490.0 950.0 P3t117 0 w n
+t 1690.0 950.0 P4t117 0 w n
+t 2890.0 950.0 P5t117 0 w n
+t 4090.0 950.0 P6t117 0 w n
+t 5290.0 950.0 P7t117 0 w n
+t 6490.0 950.0 P8t117 0 w n
+p 520.0 950.0 P3p209 0 n
+p 1720.0 950.0 P4p209 0 n
+p 2920.0 950.0 P5p209 0 n
+p 4120.0 950.0 P6p209 0 n
+p 5320.0 950.0 P7p209 0 n
+p 6520.0 950.0 P8p209 0 n
+t 520.0 980.0 P3t118 0 w n
+t 1720.0 980.0 P4t118 0 w n
+t 2920.0 980.0 P5t118 0 w n
+t 4120.0 980.0 P6t118 0 w n
+t 5320.0 980.0 P7t118 0 w n
+t 6520.0 980.0 P8t118 0 w n
+p 490.0 980.0 P3p216_ 0 n
+p 1690.0 980.0 P4p216_ 0 n
+p 2890.0 980.0 P5p216_ 0 n
+p 4090.0 980.0 P6p216_ 0 n
+p 5290.0 980.0 P7p216_ 0 n
+p 6490.0 980.0 P8p216_ 0 n
+t 560.0 950.0 P3t119 0 w n
+t 1760.0 950.0 P4t119 0 w n
+t 2960.0 950.0 P5t119 0 w n
+t 4160.0 950.0 P6t119 0 w n
+t 5360.0 950.0 P7t119 0 w n
+t 6560.0 950.0 P8t119 0 w n
+t 450.0 1020.0 P3t113 50 w n
+t 1650.0 1020.0 P4t113 50 w n
+t 2850.0 1020.0 P5t113 50 w n
+t 4050.0 1020.0 P6t113 50 w n
+t 5250.0 1020.0 P7t113 50 w n
+p 660.0 1160.0 P3p217 1 n
+p 1860.0 1160.0 P4p217 1 n
+p 3060.0 1160.0 P5p217 1 n
+p 4260.0 1160.0 P6p217 1 n
+p 5460.0 1160.0 P7p217 1 n
+p 6660.0 1160.0 P8p217 1 n
+t 690.0 1160.0 P3t120 0 w n
+t 1890.0 1160.0 P4t120 0 w n
+t 3090.0 1160.0 P5t120 0 w n
+t 4290.0 1160.0 P6t120 0 w n
+t 5490.0 1160.0 P7t120 0 w n
+t 6690.0 1160.0 P8t120 0 w n
+t 660.0 1200.0 P3t121 0 w n
+t 1860.0 1200.0 P4t121 0 w n
+t 3060.0 1200.0 P5t121 0 w n
+t 4260.0 1200.0 P6t121 0 w n
+t 5460.0 1200.0 P7t121 0 w n
+t 6660.0 1200.0 P8t121 0 w n
+p 690.0 1200.0 P3p218 0 n
+p 1890.0 1200.0 P4p218 0 n
+p 3090.0 1200.0 P5p218 0 n
+p 4290.0 1200.0 P6p218 0 n
+p 5490.0 1200.0 P7p218 0 n
+p 6690.0 1200.0 P8p218 0 n
+p 660.0 1240.0 P3p219_ 0 n
+p 1860.0 1240.0 P4p219_ 0 n
+p 3060.0 1240.0 P5p219_ 0 n
+p 4260.0 1240.0 P6p219_ 0 n
+p 5460.0 1240.0 P7p219_ 0 n
+p 6660.0 1240.0 P8p219_ 0 n
+t 690.0 1240.0 P3t122 0 w n
+t 1890.0 1240.0 P4t122 0 w n
+t 3090.0 1240.0 P5t122 0 w n
+t 4290.0 1240.0 P6t122 0 w n
+t 5490.0 1240.0 P7t122 0 w n
+t 6690.0 1240.0 P8t122 0 w n
+t 520.0 1080.0 P3t114 c 0 w n {LST PRO/P3.p} n
+t 1720.0 1080.0 P4t114 c 0 w n {LST PRO/P4.p} n
+t 2920.0 1080.0 P5t114 c 0 w n {LST PRO/P5.p} n
+t 4120.0 1080.0 P6t114 c 0 w n {LST PRO/P6.p} n
+t 5320.0 1080.0 P7t114 c 0 w n {LST PRO/P7.p} n
+t 6520.0 1080.0 P8t114 c 0 w n {LST PRO/P8.p} n
+p 560.0 1020.0 P3p203 5 se {LST/P3.p} n
+p 1760.0 1020.0 P4p203 5 se {LST/P4.p} n
+p 2960.0 1020.0 P5p203 5 se {LST/P5.p} n
+p 5360.0 1020.0 P7p203 5 se {LST/P7.p} n
+p 6560.0 1020.0 P8p203 5 se {LST/P8.p} n
+p 610.0 750.0 P3p33 3 se {DPY-23/P3.p} n
+p 1810.0 750.0 P4p33 3 se {DPY-23/P4.p} n
+p 3010.0 750.0 P5p33 3 se {DPY-23/P5.p} n
+p 4210.0 750.0 P6p33 3 se {DPY-23/P6.p} n
+p 5410.0 750.0 P7p33 3 se {DPY-23/P7.p} n
+p 6610.0 750.0 P8p33 3 se {DPY-23/P8.p} n
+t 540.0 750.0 P3t192 50 w n
+t 1740.0 750.0 P4t192 50 w n
+t 2940.0 750.0 P5t192 50 w n
+t 4140.0 750.0 P6t192 50 w n
+t 5340.0 750.0 P7t192 50 w n
+t 6540.0 750.0 P8t192 50 w n
+t 610.0 880.0 P3t29 c 0 w n {DPY-23 UR/P3.p} w
+t 1810.0 880.0 P4t29 c 0 w n {DPY-23 UR/P4.p} w
+t 3010.0 880.0 P5t29 c 0 w n {DPY-23 UR/P5.p} w
+t 4210.0 880.0 P6t29 c 0 w n {DPY-23 UR/P6.p} w
+t 5410.0 880.0 P7t29 c 0 w n {DPY-23 UR/P7.p} w
+t 6610.0 880.0 P8t29 c 0 w n {DPY-23 UR/P8.p} w
+t 580.0 1080.0 P3t112 c 0 w n {LST UR/P3.p} n
+t 1780.0 1080.0 P4t112 c 0 w n {LST UR/P4.p} n
+t 2980.0 1080.0 P5t112 c 0 w n {LST UR/P5.p} n
+t 4180.0 1080.0 P6t112 c 0 w n {LST UR/P6.p} n
+t 5380.0 1080.0 P7t112 c 0 w n {LST UR/P7.p} n
+t 6580.0 1080.0 P8t112 c 0 w n {LST UR/P8.p} n
+p 520.0 1140.0 P3p204 1 n {lst(wt)/P3.p} s
+p 1720.0 1140.0 P4p204 1 n {lst(wt)/P4.p} s
+p 2920.0 1140.0 P5p204 1 n {lst(wt)/P5.p} s
+p 5320.0 1140.0 P7p204 1 n {lst(wt)/P7.p} s
+p 6520.0 1140.0 P8p204 1 n {lst(wt)/P8.p} s
+p 900.0 1160.0 P3p1 5 n {VAV-1/P3.p} n
+p 2100.0 1160.0 P4p1 5 n {VAV-1/P4.p} n
+p 3300.0 1160.0 P5p1 5 n {VAV-1/P5.p} n
+p 4500.0 1160.0 P6p1 5 n {VAV-1/P6.p} n
+p 5700.0 1160.0 P7p1 5 n {VAV-1/P7.p} n
+p 6900.0 1160.0 P8p1 5 n {VAV-1/P8.p} n
+p 1020.0 1250.0 P3p4 0 n {mir-61(miRNA)/P3.p} n
+p 2220.0 1250.0 P4p4 0 n {mir-61(miRNA)/P4.p} n
+p 3420.0 1250.0 P5p4 0 n {mir-61(miRNA)/P5.p} n
+p 4620.0 1250.0 P6p4 0 n {mir-61(miRNA)/P6.p} n
+p 5820.0 1250.0 P7p4 0 n {mir-61(miRNA)/P7.p} n
+p 7020.0 1250.0 P8p4 0 n {mir-61(miRNA)/P8.p} n
+p 970.0 1160.0 P3p2 1 n {vav-1(wt)/P3.p} n
+p 2170.0 1160.0 P4p2 1 n {vav-1(wt)/P4.p} n
+p 3370.0 1160.0 P5p2 1 n {vav-1(wt)/P5.p} n
+p 4570.0 1160.0 P6p2 1 n {vav-1(wt)/P6.p} n
+p 5770.0 1160.0 P7p2 1 n {vav-1(wt)/P7.p} n
+p 6970.0 1160.0 P8p2 1 n {vav-1(wt)/P8.p} n
+p 410.0 670.0 P3p65 0 n {LIN-3/P3.p} w
+p 1610.0 670.0 P4p65 0 n {LIN-3/P4.p} w
+p 2810.0 670.0 P5p65 0 n {LIN-3/P5.p} w
+p 4010.0 670.0 P6p65 0 n {LIN-3/P6.p} w
+p 5210.0 670.0 P7p65 0 n {LIN-3/P7.p} w
+p 6410.0 670.0 P8p65 0 n {LIN-3/P8.p} w
+p 480.0 750.0 P3p6 5 n {LET-23/P3.p} n
+p 1680.0 750.0 P4p6 5 n {LET-23/P4.p} n
+p 2880.0 750.0 P5p6 5 n {LET-23/P5.p} n
+p 4080.0 750.0 P6p6 5 n {LET-23/P6.p} n
+p 5280.0 750.0 P7p6 5 n {LET-23/P7.p} n
+p 6480.0 750.0 P8p6 5 n {LET-23/P8.p} n
+p 370.0 890.0 P3p22 0 n {SEM-5 ACT/P3.p} w
+p 1570.0 890.0 P4p22 0 n {SEM-5 ACT/P4.p} w
+p 2770.0 890.0 P5p22 0 n {SEM-5 ACT/P5.p} w
+p 3970.0 890.0 P6p22 0 n {SEM-5 ACT/P6.p} w
+p 5170.0 890.0 P7p22 0 n {SEM-5 ACT/P7.p} w
+p 6370.0 890.0 P8p22 0 n {SEM-5 ACT/P8.p} w
+p 1810.0 1430.0 P4p34 0 e {LIN-12 ACT/P4.p} e
+p 3010.0 1430.0 P5p34 0 e {LIN-12 ACT/P5.p} e
+p 4210.0 1430.0 P6p34 0 e {LIN-12 ACT/P6.p} e
+p 5410.0 1430.0 P7p34 0 e {LIN-12 ACT/P7.p} e
+p 6610.0 1430.0 P8p34 0 e {LIN-12 ACT/P8.p} e
+p 370.0 1920.0 P3p35 1 n {dsl(wt)/P3.p} s
+p 1570.0 1920.0 P4p35 1 n {dsl(wt)/P4.p} s
+p 2770.0 1920.0 P5p35 1 n {dsl(wt)/P5.p} s
+p 3970.0 1920.0 P6p35 1 n {dsl(wt)/P6.p} s
+p 5170.0 1920.0 P7p35 1 n {dsl(wt)/P7.p} s
+p 6370.0 1920.0 P8p35 1 n {dsl(wt)/P8.p} s
+t 1020.0 1320.0 P3t4 0 w n
+t 2220.0 1320.0 P4t4 0 w n
+t 3420.0 1320.0 P5t4 0 w n
+t 4620.0 1320.0 P6t4 0 w n
+t 5820.0 1320.0 P7t4 0 w n
+t 7020.0 1320.0 P8t4 0 w n
+p 770.0 1160.0 P3p41 5 n {LIN-12/P3.p} nw
+p 3170.0 1160.0 P5p41 5 n {LIN-12/P5.p} nw
+p 4370.0 1160.0 P6p41 5 n {LIN-12/P6.p} nw
+p 5570.0 1160.0 P7p41 5 n {LIN-12/P7.p} nw
+p 6770.0 1160.0 P8p41 5 n {LIN-12/P8.p} nw
+p 890.0 1330.0 P3p151 1 n
+p 2090.0 1330.0 P4p151 1 n
+p 3290.0 1330.0 P5p151 1 n
+p 4490.0 1330.0 P6p151 1 n
+p 5690.0 1330.0 P7p151 1 n
+p 6890.0 1330.0 P8p151 1 n
+p 840.0 1270.0 P3p150 0 n
+p 2040.0 1270.0 P4p150 0 n
+p 3240.0 1270.0 P5p150 0 n
+p 4440.0 1270.0 P6p150 0 n
+p 5640.0 1270.0 P7p150 0 n
+p 6840.0 1270.0 P8p150 0 n
+p 560.0 1200.0 P3p207 0 n
+p 1760.0 1200.0 P4p207 0 n
+p 2960.0 1200.0 P5p207 0 n
+p 4160.0 1200.0 P6p207 0 n
+p 5360.0 1200.0 P7p207 0 n
+p 6560.0 1200.0 P8p207 0 n
+t 560.0 1250.0 P3t115 0 w n
+t 1760.0 1250.0 P4t115 0 w n
+t 2960.0 1250.0 P5t115 0 w n
+t 4160.0 1250.0 P6t115 0 w n
+t 5360.0 1250.0 P7t115 0 w n
+t 6560.0 1250.0 P8t115 0 w n
+p 560.0 1290.0 P3p205 1 n
+p 1760.0 1290.0 P4p205 1 n
+p 2960.0 1290.0 P5p205 1 n
+p 4160.0 1290.0 P6p205 1 n
+p 5360.0 1290.0 P7p205 1 n
+p 6560.0 1290.0 P8p205 1 n
+t 770.0 1680.0 P3t25 c 0 w n {LIN-12 AR/P3.p} ne
+t 1970.0 1680.0 P4t25 c 0 w n {LIN-12 AR/P4.p} ne
+t 3170.0 1680.0 P5t25 c 0 w n {LIN-12 AR/P5.p} ne
+t 4370.0 1680.0 P6t25 c 0 w n {LIN-12 AR/P6.p} ne
+t 5570.0 1680.0 P7t25 c 0 w n {LIN-12 AR/P7.p} ne
+t 6770.0 1680.0 P8t25 c 0 w n {LIN-12 AR/P8.p} ne
+p 540.0 810.0 P3p21 1 n {let-23(wt)/P3.p} s
+p 1740.0 810.0 P4p21 1 n {let-23(wt)/P4.p} s
+p 2940.0 810.0 P5p21 1 n {let-23(wt)/P5.p} s
+p 4140.0 810.0 P6p21 1 n {let-23(wt)/P6.p} s
+p 5340.0 810.0 P7p21 1 n {let-23(wt)/P7.p} s
+p 6540.0 810.0 P8p21 1 n {let-23(wt)/P8.p} s
+p 660.0 1030.0 P3p237 0 n {lin-12(d)/P3.p} s
+p 1860.0 1030.0 P4p237 0 n {lin-12(d)/P4.p} s
+p 3060.0 1030.0 P5p237 0 n {lin-12(d)/P5.p} s
+p 4260.0 1030.0 P6p237 0 n {lin-12(d)/P6.p} s
+p 5460.0 1030.0 P7p237 0 n {lin-12(d)/P7.p} s
+p 6660.0 1030.0 P8p237 0 n {lin-12(d)/P8.p} s
+p 880.0 1030.0 P3p20 1 n {lin-12(wt)/P3.p} s
+p 2080.0 1030.0 P4p20 1 n {lin-12(wt)/P4.p} s
+p 3280.0 1030.0 P5p20 1 n {lin-12(wt)/P5.p} s
+p 4480.0 1030.0 P6p20 1 n {lin-12(wt)/P6.p} s
+p 5680.0 1030.0 P7p20 1 n {lin-12(wt)/P7.p} s
+p 6880.0 1030.0 P8p20 1 n {lin-12(wt)/P8.p} s
+t 830.0 1030.0 P3t18 c 0 w n {LIN-12(wd) PRO/P3.p} n
+t 2030.0 1030.0 P4t18 c 0 w n {LIN-12(wd) PRO/P4.p} n
+t 3230.0 1030.0 P5t18 c 0 w n {LIN-12(wd) PRO/P5.p} n
+t 4430.0 1030.0 P6t18 c 0 w n {LIN-12(wd) PRO/P6.p} n
+t 5630.0 1030.0 P7t18 c 0 w n {LIN-12(wd) PRO/P7.p} n
+t 6830.0 1030.0 P8t18 c 0 w n {LIN-12(wd) PRO/P8.p} n
+t 710.0 1030.0 P3t17 c 0 w n {LIN-12(d) PRO/P3.p} n
+t 1910.0 1030.0 P4t17 c 0 w n {LIN-12(d) PRO/P4.p} n
+t 3110.0 1030.0 P5t17 c 0 w n {LIN-12(d) PRO/P5.p} n
+t 4310.0 1030.0 P6t17 c 0 w n {LIN-12(d) PRO/P6.p} n
+t 5510.0 1030.0 P7t17 c 0 w n {LIN-12(d) PRO/P7.p} n
+t 6710.0 1030.0 P8t17 c 0 w n {LIN-12(d) PRO/P8.p} n
+p 1020.0 1370.0 P3p3 1 n {mir-61/P3.p} s
+p 2220.0 1370.0 P4p3 1 n {mir-61/P4.p} s
+p 3420.0 1370.0 P5p3 1 n {mir-61/P5.p} s
+p 4620.0 1370.0 P6p3 1 n {mir-61/P6.p} s
+p 5820.0 1370.0 P7p3 1 n {mir-61/P7.p} s
+p 7020.0 1370.0 P8p3 1 n {mir-61/P8.p} s
+t 930.0 1220.0 P3t12 c 0 w n {VAV-1 PRO/P3.p} s
+t 2130.0 1220.0 P4t12 c 0 w n {VAV-1 PRO/P4.p} s
+t 3330.0 1220.0 P5t12 c 0 w n {VAV-1 PRO/P5.p} s
+t 4530.0 1220.0 P6t12 c 0 w n {VAV-1 PRO/P6.p} s
+t 5730.0 1220.0 P7t12 c 0 w n {VAV-1 PRO/P7.p} s
+t 6930.0 1220.0 P8t12 c 0 w n {VAV-1 PRO/P8.p} s
+t 1020.0 1160.0 P3t30 50 w n
+t 2220.0 1160.0 P4t30 50 w n
+t 3420.0 1160.0 P5t30 50 w n
+t 4620.0 1160.0 P6t30 50 w n
+t 5820.0 1160.0 P7t30 50 w n
+t 7020.0 1160.0 P8t30 50 w n
+t 840.0 1160.0 P3t188 0 w n
+t 2040.0 1160.0 P4t188 0 w n
+t 3240.0 1160.0 P5t188 0 w n
+t 4440.0 1160.0 P6t188 0 w n
+t 5640.0 1160.0 P7t188 0 w n
+t 6840.0 1160.0 P8t188 0 w n
+t 1890.0 1300.0 P4t211 0 w n
+t 3090.0 1300.0 P5t211 0 w n
+t 4290.0 1300.0 P6t211 0 w n
+p 1170.0 2040.0 aP3P15_ 0 n {DSL/P3-4.p} s
+p 2350.0 2040.0 aP4P15_ 0 n {DSL/P4-5.p} s
+p 3590.0 2040.0 aP5P15_ 0 n {DSL/P5-6.p} s
+p 4740.0 2040.0 aP6P15_ 0 n {DSL/P6-7.p} s
+p 1970.0 1160.0 P4p41 5 n {LIN-12/P4.p} nw
+t 1570.0 1860.0 P4t31 c 0 w n {DSL UR/P4.p} se
+p 1570.0 1400.0 P4p24 0 n {MPK-1 ACT/P4.p} se
+t 2220.0 1860.0 P4t59 500 w n
+t 890.0 1860.0 P3t59 500 w n
+t 3330.0 1860.0 P5t59 500 w n
+t 5760.0 1860.0 P7t59 500 w n
+t 6940.0 1860.0 P8t59 500 w n
+t 4480.0 1860.0 P6t59 500 w n
+t 4010.0 470.0 at64 0 w n
+t 3900.0 470.0 at72 0 w n
+t 4120.0 470.0 at73 0 w n
+t 4010.0 590.0 at7 0 w n
+p 4010.0 530.0 ap0_ 0 n
+p 30.0 2000.0 ap18 1 n
+t 60.0 2000.0 at17 0 w n
+t 30.0 1960.0 at18 0 w n
+p 60.0 1960.0 ap19 0 n
+p 30.0 1920.0 ap20_ 0 n
+t 60.0 1920.0 at19 0 w n
+p 1160.0 1990.0 ap21 1 n
+t 1190.0 1990.0 at20 0 w n
+t 1160.0 1950.0 at21 0 w n
+p 1190.0 1950.0 ap22 0 n
+p 1160.0 1910.0 ap23_ 0 n
+t 1190.0 1910.0 at22 0 w n
+p 2340.0 2000.0 ap24 1 n
+t 2370.0 2000.0 at23 0 w n
+t 2340.0 1960.0 at24 0 w n
+p 2370.0 1960.0 ap25 0 n
+p 2340.0 1920.0 ap26_ 0 n
+t 2370.0 1920.0 at25 0 w n
+p 3580.0 2000.0 ap27 1 n
+t 3610.0 2000.0 at26 0 w n
+t 3580.0 1960.0 at27 0 w n
+p 3610.0 1960.0 ap28 0 n
+p 3580.0 1920.0 ap29_ 0 n
+t 3610.0 1920.0 at28 0 w n
+p 4720.0 1990.0 ap30 1 n
+t 4750.0 1990.0 at29 0 w n
+t 4720.0 1950.0 at30 0 w n
+p 4750.0 1950.0 ap31 0 n
+p 4720.0 1910.0 ap32_ 0 n
+t 4750.0 1910.0 at31 0 w n
+p 5850.0 2000.0 ap33 1 n
+t 5880.0 2000.0 at32 0 w n
+t 5850.0 1960.0 at33 0 w n
+p 5880.0 1960.0 ap34 0 n
+p 5850.0 1920.0 ap35_ 0 n
+t 5880.0 1920.0 at34 0 w n
+p 7040.0 1990.0 ap36 1 n
+t 7070.0 1990.0 at35 0 w n
+t 7040.0 1950.0 at36 0 w n
+p 7070.0 1950.0 ap37 0 n
+p 7040.0 1910.0 ap38_ 0 n
+t 7070.0 1910.0 at37 0 w n
+p 3970.0 1400.0 P6p24 0 n {MPK-1 ACT/P6.p} se
+t 4120.0 1200.0 P6t116 500 w s
+p 4050.0 1250.0 P6p32 5 n {MPK-1/P6.p} s
+p 4120.0 1140.0 P6p204 1 n {lst(wt)/P6.p} s
+p 4160.0 1020.0 P6p203 5 se {LST/P6.p} n
+p 3680.0 160.0 ap1 5 n {LIN-15/hyp7} n
+t 3560.0 210.0 at9 c 0 w n {LIN-3 PRO/hyp7} w
+t 3620.0 160.0 at8 500 w n
+p 3850.0 160.0 ap0 1 n {lin-15(wt)/hyp7} n
+t 3760.0 160.0 at6 c 0 w n {LIN-15 PRO/hyp7} n
+t 3540.0 380.0 P5t109 0 w n
+t 3570.0 380.0 P6t109 0 w n
+t 3630.0 380.0 P8t109 0 w n
+t 3600.0 380.0 P7t109 0 w n
+t 3510.0 380.0 P4t109 0 w n
+t 5490.0 1300.0 P7t211 0 w n
+p 1870.0 1270.0 P4p402 1 n
+t 1850.0 1300.0 P4t401 2 w n
+p 4270.0 1270.0 P6p402 1 n
+t 4250.0 1300.0 P6t401 2 w n
+p 3070.0 1270.0 P5p402 1 n
+t 3050.0 1300.0 P5t401 2 w n
+p 670.0 1270.0 P3p402 1 n
+t 650.0 1300.0 P3t401 2 w n
+t 6640.0 1300.0 P8t401 2 w n
+p 6670.0 1270.0 P8p402 1 n
+p 4130.0 1860.0 P6p25 0 w {DSL/P6.p} e
+p 610.0 1430.0 P3p34 0 e {LIN-12 ACT/P3.p} e
+t 5440.0 1300.0 P7t401 2 w n
+p 5470.0 1270.0 P7p402 1 n
+t 6690.0 1300.0 P8t211 0 w n
+p 3480.0 350.0 P3p6_ 0 n
+p 3510.0 350.0 P4p6_ 0 n
+p 3540.0 350.0 P5p6_ 0 n
+p 3570.0 350.0 P6p6_ 0 n
+p 3600.0 350.0 P7p6_ 0 n
+t 3510.0 320.0 P4t162 0 w n
+t 3540.0 320.0 P5t162 0 w n
+t 3570.0 320.0 P6t162 0 w n
+t 3600.0 320.0 P7t162 0 w n
+p 3560.0 260.0 ap3 0 n {LIN-3/hyp7} w
+t 3630.0 320.0 P8t162 0 w n
+t 3480.0 320.0 P3t162 0 w n
+t 3480.0 380.0 P3t109 0 w n
+p 3630.0 350.0 P8p6_ 0 n
+t 3490.0 160.0 at45 500 w n
+t 3450.0 120.0 at44 0 w n
+p 3490.0 120.0 ap15_ 0 n
+p 3560.0 160.0 ap2 0 n {lin-3(wt)/hyp7} n
+p 3450.0 160.0 ap14 1 n
+t 4300.0 1330.0 P6t50 50 w n
+t 3100.0 1330.0 P5t50 50 w n
+t 6700.0 1320.0 P8t50 50 w n
+t 5500.0 1320.0 P7t50 50 w n
+t 1900.0 1320.0 P4t50 50 w n
+t 690.0 1300.0 P3t211 0 w n
+t 710.0 1300.0 P3t50 50 w n
+t 6450.0 1020.0 P8t113 50 w n
+e aP6 aT25 1 n
+e aT25 aP28 1 n
+e aP28 at71 1 n
+e at71 ap73 2 n
+e ap73 at72 1 n
+e at72 ap75_ 1 n
+e ap75_ at74 1 n
+e ap75_ at75 1 n
+e ap73 at73 1 n
+e at73 ap76_ 1 n
+e ap76_ a76 1 n
+e ap76_ at77 1 n
+e ap73 at64 1 n
+e at71 aP28 1 n
+e P3p6 P3t23 5 n
+e P4p6 P4t23 5 n
+e P5p6 P5t23 5 n
+e P6p6 P6t23 5 n
+e P7p6 P7t23 5 n
+e P8p6 P8t23 5 n
+e P3p19 P3t20 5 n
+e P4p19 P4t20 5 n
+e P5p19 P5t20 5 n
+e P6p19 P6t20 5 n
+e P7p19 P7t20 5 n
+e P8p19 P8t20 5 n
+e P3p18 P3t19 5 n
+e P4p18 P4t19 5 n
+e P5p18 P5t19 5 n
+e P6p18 P6t19 5 n
+e P7p18 P7t19 5 n
+e P8p18 P8t19 5 n
+e P3p32 P3t19 5 n
+e P4p32 P4t19 5 n
+e P5p32 P5t19 5 n
+e P6p32 P6t19 5 n
+e P7p32 P7t19 5 n
+e P8p32 P8t19 5 n
+e P3p34 P3t29 4 n
+e P4p34 P4t29 4 n
+e P5p34 P5t29 4 n
+e P6p34 P6t29 4 n
+e P7p34 P7t29 4 n
+e P8p34 P8t29 4 n
+e P3p20 P3t18 1 n
+e P4p20 P4t18 1 n
+e P5p20 P5t18 1 n
+e P6p20 P6t18 1 n
+e P7p20 P7t18 1 n
+e P8p20 P8t18 1 n
+e P3p16 P3t7 1 n
+e P4p16 P4t7 1 n
+e P5p16 P5t7 1 n
+e P6p16 P6t7 1 n
+e P7p16 P7t7 1 n
+e P8p16 P8t7 1 n
+e P3p41 P3t26 3 n
+e P4p41 P4t26 3 n
+e P5p41 P5t26 3 n
+e P6p41 P6t26 3 n
+e P7p41 P7t26 3 n
+e P8p41 P8t26 3 n
+e P3p15 P3t6 1 n
+e P4p15 P4t6 1 n
+e P5p15 P5t6 1 n
+e P6p15 P6t6 1 n
+e P7p15 P7t6 1 n
+e P8p15 P8t6 1 n
+e P3p31 P3t10 1 n
+e P4p31 P4t10 1 n
+e P5p31 P5t10 1 n
+e P6p31 P6t10 1 n
+e P7p31 P7t10 1 n
+e P8p31 P8t10 1 n
+e P3p21 P3t15 1 n
+e P4p21 P4t15 1 n
+e P5p21 P5t15 1 n
+e P6p21 P6t15 1 n
+e P7p21 P7t15 1 n
+e P8p21 P8t15 1 n
+e P3p10 P3t20 5 n
+e P4p10 P4t20 5 n
+e P5p10 P5t20 5 n
+e P6p10 P6t20 5 n
+e P7p10 P7t20 5 n
+e P8p10 P8t20 5 n
+e P3p38 P3t29 1 n
+e P4p38 P4t29 1 n
+e P5p38 P5t29 1 n
+e P6p38 P6t29 1 n
+e P7p38 P7t29 1 n
+e P8p38 P8t29 1 n
+e P3p22 P3t5 5 n
+e P4p22 P4t5 5 n
+e P5p22 P5t5 5 n
+e P6p22 P6t5 5 n
+e P7p22 P7t5 5 n
+e P8p22 P8t5 5 n
+e P3p17 P3t5 5 n
+e P4p17 P4t5 5 n
+e P5p17 P5t5 5 n
+e P6p17 P6t5 5 n
+e P7p17 P7t5 5 n
+e P8p17 P8t5 5 n
+e P3t23 P3p19 1 n
+e P4t23 P4p19 1 n
+e P5t23 P5p19 1 n
+e P6t23 P6p19 1 n
+e P7t23 P7p19 1 n
+e P8t23 P8p19 1 n
+e P3t26 P3p34 1 n
+e P4t26 P4p34 1 n
+e P5t26 P5p34 1 n
+e P6t26 P6p34 1 n
+e P7t26 P7p34 1 n
+e P8t26 P8p34 1 n
+e P3t17 P3p41 3 n
+e P4t17 P4p41 3 n
+e P5t17 P5p41 3 n
+e P6t17 P6p41 3 n
+e P7t17 P7p41 3 n
+e P8t17 P8p41 3 n
+e P3t18 P3p20 1 n
+e P4t18 P4p20 1 n
+e P5t18 P5p20 1 n
+e P6t18 P6p20 1 n
+e P7t18 P7p20 1 n
+e P8t18 P8p20 1 n
+e P3t18 P3p41 1 n
+e P4t18 P4p41 1 n
+e P5t18 P5p41 1 n
+e P6t18 P6p41 1 n
+e P7t18 P7p41 1 n
+e P8t18 P8p41 1 n
+e P3t7 P3p16 1 n
+e P4t7 P4p16 1 n
+e P5t7 P5p16 1 n
+e P6t7 P6p16 1 n
+e P7t7 P7p16 1 n
+e P8t7 P8p16 1 n
+e P3t7 P3p10 1 n
+e P4t7 P4p10 1 n
+e P5t7 P5p10 1 n
+e P6t7 P6p10 1 n
+e P7t7 P7p10 1 n
+e P8t7 P8p10 1 n
+e P3t6 P3p15 1 n
+e P4t6 P4p15 1 n
+e P5t6 P5p15 1 n
+e P6t6 P6p15 1 n
+e P7t6 P7p15 1 n
+e P8t6 P8p15 1 n
+e P3t6 P3p17 1 n
+e P4t6 P4p17 1 n
+e P5t6 P5p17 1 n
+e P6t6 P6p17 1 n
+e P7t6 P7p17 1 n
+e P8t6 P8p17 1 n
+e P3t10 P3p32 1 n
+e P4t10 P4p32 1 n
+e P5t10 P5p32 1 n
+e P6t10 P6p32 1 n
+e P7t10 P7p32 1 n
+e P8t10 P8p32 1 n
+e P3t10 P3p31 1 n
+e P4t10 P4p31 1 n
+e P5t10 P5p31 1 n
+e P6t10 P6p31 1 n
+e P7t10 P7p31 1 n
+e P8t10 P8p31 1 n
+e P3t15 P3p6 1 n
+e P4t15 P4p6 1 n
+e P5t15 P5p6 1 n
+e P6t15 P6p6 1 n
+e P7t15 P7p6 1 n
+e P8t15 P8p6 1 n
+e P3t15 P3p21 1 n
+e P4t15 P4p21 1 n
+e P5t15 P5p21 1 n
+e P6t15 P6p21 1 n
+e P7t15 P7p21 1 n
+e P8t15 P8p21 1 n
+e P3t20 P3p22 1 n
+e P4t20 P4p22 1 n
+e P5t20 P5p22 1 n
+e P6t20 P6p22 1 n
+e P7t20 P7p22 1 n
+e P8t20 P8p22 1 n
+e P3t5 P3p18 1 n
+e P4t5 P4p18 1 n
+e P5t5 P5p18 1 n
+e P6t5 P6p18 1 n
+e P7t5 P7p18 1 n
+e P8t5 P8p18 1 n
+e P3t19 P3p24 1 n
+e P4t19 P4p24 1 n
+e P5t19 P5p24 1 n
+e P6t19 P6p24 1 n
+e P7t19 P7p24 1 n
+e P8t19 P8p24 1 n
+e P3t29 P3p33 4 n
+e P4t29 P4p33 4 n
+e P5t29 P5p33 4 n
+e P6t29 P6p33 4 n
+e P7t29 P7p33 4 n
+e P8t29 P8p33 4 n
+e P3t29 P3p34 3 n
+e P4t29 P4p34 3 n
+e P5t29 P5p34 3 n
+e P6t29 P6p34 3 n
+e P7t29 P7p34 3 n
+e P8t29 P8p34 3 n
+e P3t29 P3p38 1 n
+e P4t29 P4p38 1 n
+e P5t29 P5p38 1 n
+e P6t29 P6p38 1 n
+e P7t29 P7p38 1 n
+e P8t29 P8p38 1 n
+e P3p24 P3t31 5 n
+e P4p24 P4t31 5 n
+e P5p24 P5t31 5 n
+e P6p24 P6t31 5 n
+e P7p24 P7t31 5 n
+e P8p24 P8t31 5 n
+e P3t31 P3p24 4 n
+e P4t31 P4p24 4 n
+e P5t31 P5p24 4 n
+e P6t31 P6p24 4 n
+e P7t31 P7p24 4 n
+e P8t31 P8p24 4 n
+e P3t31 P3p25 2 n
+e P4t31 P4p25 2 n
+e P5t31 P5p25 2 n
+e P6t31 P6p25 2 n
+e P7t31 P7p25 2 n
+e P8t31 P8p25 2 n
+e P3p41 P3t25 3 n
+e P4p41 P4t25 3 n
+e P5p41 P5t25 3 n
+e P6p41 P6t25 3 n
+e P7p41 P7t25 3 n
+e P8p41 P8t25 3 n
+e P3t25 P3p34 1 n
+e P4t25 P4p34 1 n
+e P5t25 P5p34 1 n
+e P6t25 P6p34 1 n
+e P7t25 P7p34 1 n
+e P8t25 P8p34 1 n
+e P3p25 P3t22 1 n
+e P4p25 P4t22 1 n
+e P5p25 P5t22 1 n
+e P6p25 P6t22 1 n
+e P7p25 P7t22 1 n
+e P8p25 P8t22 1 n
+e P3t22 aP3p29_ 1 n
+e P3p25 P3t21 1 n
+e P4p25 P4t21 1 n
+e P5p25 P5t21 1 n
+e P6p25 P6t21 1 n
+e P7p25 P7t21 1 n
+e P8p25 P8t21 1 n
+e aP3p29_ P3t26 5 n
+e P3p35 P3t31 1 n
+e P4p35 P4t31 1 n
+e P5p35 P5t31 1 n
+e P6p35 P6t31 1 n
+e P7p35 P7t31 1 n
+e P8p35 P8t31 1 n
+e P3t31 P3p35 1 n
+e P4t31 P4p35 1 n
+e P5t31 P5p35 1 n
+e P6t31 P6p35 1 n
+e P7t31 P7p35 1 n
+e P8t31 P8p35 1 n
+e P3t20 P3p10 4 n
+e P4t20 P4p10 4 n
+e P5t20 P5p10 4 n
+e P6t20 P6p10 4 n
+e P7t20 P7p10 4 n
+e P8t20 P8p10 4 n
+e P3t20 P3p19 4 n
+e P4t20 P4p19 4 n
+e P5t20 P5p19 4 n
+e P6t20 P6p19 4 n
+e P7t20 P7p19 4 n
+e P8t20 P8p19 4 n
+e P3t23 P3p6 4 n
+e P4t23 P4p6 4 n
+e P5t23 P5p6 4 n
+e P6t23 P6p6 4 n
+e P7t23 P7p6 4 n
+e P8t23 P8p6 4 n
+e P3t5 P3p22 4 n
+e P4t5 P4p22 4 n
+e P5t5 P5p22 4 n
+e P6t5 P6p22 4 n
+e P7t5 P7p22 4 n
+e P8t5 P8p22 4 n
+e P3t5 P3p17 4 n
+e P4t5 P4p17 4 n
+e P5t5 P5p17 4 n
+e P6t5 P6p17 4 n
+e P7t5 P7p17 4 n
+e P8t5 P8p17 4 n
+e P3t19 P3p18 4 n
+e P4t19 P4p18 4 n
+e P5t19 P5p18 4 n
+e P6t19 P6p18 4 n
+e P7t19 P7p18 4 n
+e P8t19 P8p18 4 n
+e P3t19 P3p32 4 n
+e P4t19 P4p32 4 n
+e P5t19 P5p32 4 n
+e P6t19 P6p32 4 n
+e P7t19 P7p32 4 n
+e P8t19 P8p32 4 n
+e P3t25 P3p41 2 n
+e P4t25 P4p41 2 n
+e P5t25 P5p41 2 n
+e P6t25 P6p41 2 n
+e P7t25 P7p41 2 n
+e P8t25 P8p41 2 n
+e P3t26 P3p41 2 n
+e P4t26 P4p41 2 n
+e P5t26 P5p41 2 n
+e P6t26 P6p41 2 n
+e P7t26 P7p41 2 n
+e P8t26 P8p41 2 n
+e P3t21 aP3P15_ 1 n
+e P4t21 aP4P15_ 1 n
+e P5t21 aP5P15_ 1 n
+e P6t21 aP6P15_ 1 n
+e P7t21 aP7P15_ 1 n
+e P8t21 aP8P15_ 1 n
+e aP3P15_ P3t25 5 n
+e aP4P15_ P4t25 5 n
+e aP5P15_ P5t25 5 n
+e aP6P15_ P6t25 5 n
+e aP7P15_ P7t25 5 n
+e aP8P15_ P8t25 5 n
+e P3p6 P3t192 2 n
+e P4p6 P4t192 2 n
+e P5p6 P5t192 2 n
+e P6p6 P6t192 2 n
+e P7p6 P7t192 2 n
+e P8p6 P8t192 2 n
+e P3p33 P3t192 1 n
+e P4p33 P4t192 1 n
+e P5p33 P5t192 1 n
+e P6p33 P6t192 1 n
+e P7p33 P7t192 1 n
+e P8p33 P8t192 1 n
+e P3t26 aP3p29_ 4 n
+e P3t25 aP3P15_ 4 n
+e P4t25 aP4P15_ 4 n
+e P5t25 aP5P15_ 4 n
+e P6t25 aP6P15_ 4 n
+e P7t25 aP7P15_ 4 n
+e P8t25 aP8P15_ 4 n
+e P3p65 P3t23 5 n
+e P4p65 P4t23 5 n
+e P5p65 P5t23 5 n
+e P6p65 P6t23 5 n
+e P7p65 P7t23 5 n
+e P8p65 P8t23 5 n
+e P3t23 P3p65 4 n
+e P4t23 P4p65 4 n
+e P5t23 P5p65 4 n
+e P6t23 P6p65 4 n
+e P7t23 P7p65 4 n
+e P8t23 P8p65 4 n
+e P3p41 P3t188 5 n
+e P4p41 P4t188 5 n
+e P5p41 P5t188 5 n
+e P6p41 P6t188 5 n
+e P7p41 P7t188 5 n
+e P8p41 P8t188 5 n
+e P3t188 P3p41 4 n
+e P4t188 P4p41 4 n
+e P5t188 P5p41 4 n
+e P6t188 P6p41 4 n
+e P7t188 P7p41 4 n
+e P8t188 P8p41 4 n
+e P3p41 P3t211 6 n
+e P4p41 P4t211 6 n
+e P5p41 P5t211 6 n
+e P6p41 P6t211 6 n
+e P7p41 P7t211 6 n
+e P8p41 P8t211 6 n
+e P3t211 P3p34 1 n
+e P4t211 P4p34 1 n
+e P5t211 P5p34 1 n
+e P6t211 P6p34 1 n
+e P7t211 P7p34 1 n
+e P8t211 P8p34 1 n
+e P3t211 P3p41 5 n
+e P4t211 P4p41 5 n
+e P5t211 P5p41 5 n
+e P6t211 P6p41 5 n
+e P7t211 P7p41 5 n
+e P8t211 P8p41 5 n
+e P3t253 P3p151 1 n
+e P4t253 P4p151 1 n
+e P5t253 P5p151 1 n
+e P6t253 P6p151 1 n
+e P7t253 P7p151 1 n
+e P8t253 P8p151 1 n
+e P3p151 P3t253 1 n
+e P4p151 P4t253 1 n
+e P5p151 P5t253 1 n
+e P6p151 P6t253 1 n
+e P7p151 P7t253 1 n
+e P8p151 P8t253 1 n
+e P3t253 P3p150 4 n
+e P4t253 P4p150 4 n
+e P5t253 P5p150 4 n
+e P6t253 P6p150 4 n
+e P7t253 P7p150 4 n
+e P8t253 P8p150 4 n
+e P3p150 P3t254 1 n
+e P4p150 P4t254 1 n
+e P5p150 P5t254 1 n
+e P6p150 P6t254 1 n
+e P7p150 P7t254 1 n
+e P8p150 P8t254 1 n
+e P3p24 P3t253 2 n
+e P4p24 P4t253 2 n
+e P5p24 P5t253 2 n
+e P6p24 P6t253 2 n
+e P7p24 P7t253 2 n
+e P8p24 P8t253 2 n
+e P3t253 P3p24 1 n
+e P4t253 P4p24 1 n
+e P5t253 P5p24 1 n
+e P6t253 P6p24 1 n
+e P7t253 P7p24 1 n
+e P8t253 P8p24 1 n
+e P3p41 P3t254 1 n
+e P4p41 P4t254 1 n
+e P5p41 P5t254 1 n
+e P6p41 P6t254 1 n
+e P7p41 P7t254 1 n
+e P8p41 P8t254 1 n
+e P3p163 P3t267 1 n
+e P4p163 P4t267 1 n
+e P5p163 P5t267 1 n
+e P6p163 P6t267 1 n
+e P7p163 P7t267 1 n
+e P8p163 P8t267 1 n
+e P3t267 P3p165_ 1 n
+e P4t267 P4p165_ 1 n
+e P5t267 P5p165_ 1 n
+e P6t267 P6p165_ 1 n
+e P7t267 P7p165_ 1 n
+e P8t267 P8p165_ 1 n
+e P3t267 P3p163 1 n
+e P4t267 P4p163 1 n
+e P5t267 P5p163 1 n
+e P6t267 P6p163 1 n
+e P7t267 P7p163 1 n
+e P8t267 P8p163 1 n
+e P3p165_ P3t268 100 s
+e P4p165_ P4t268 100 s
+e P5p165_ P5t268 100 s
+e P6p165_ P6t268 100 s
+e P7p165_ P7t268 100 s
+e P8p165_ P8t268 100 s
+e P3t268 P3p164 1 n
+e P4t268 P4p164 1 n
+e P5t268 P5p164 1 n
+e P6t268 P6p164 1 n
+e P7t268 P7p164 1 n
+e P8t268 P8p164 1 n
+e P3p164 P3t266 1 n
+e P4p164 P4t266 1 n
+e P5p164 P5t266 1 n
+e P6p164 P6t266 1 n
+e P7p164 P7t266 1 n
+e P8p164 P8t266 1 n
+e P3p166 P3t270 1 n
+e P4p166 P4t270 1 n
+e P5p166 P5t270 1 n
+e P6p166 P6t270 1 n
+e P7p166 P7t270 1 n
+e P8p166 P8t270 1 n
+e P3t270 P3p168_ 1 n
+e P4t270 P4p168_ 1 n
+e P5t270 P5p168_ 1 n
+e P6t270 P6p168_ 1 n
+e P7t270 P7p168_ 1 n
+e P8t270 P8p168_ 1 n
+e P3t270 P3p166 1 n
+e P4t270 P4p166 1 n
+e P5t270 P5p166 1 n
+e P6t270 P6p166 1 n
+e P7t270 P7p166 1 n
+e P8t270 P8p166 1 n
+e P3p168_ P3t271 100 s
+e P4p168_ P4t271 100 s
+e P5p168_ P5t271 100 s
+e P6p168_ P6t271 100 s
+e P7p168_ P7t271 100 s
+e P8p168_ P8t271 100 s
+e P3t271 P3p167 1 n
+e P4t271 P4p167 1 n
+e P5t271 P5p167 1 n
+e P6t271 P6p167 1 n
+e P7t271 P7p167 1 n
+e P8t271 P8p167 1 n
+e P3p167 P3t269 1 n
+e P4p167 P4t269 1 n
+e P5p167 P5t269 1 n
+e P6p167 P6t269 1 n
+e P7p167 P7t269 1 n
+e P8p167 P8t269 1 n
+e P3p34 P3t266 1 n
+e P4p34 P4t266 1 n
+e P5p34 P5t266 1 n
+e P6p34 P6t266 1 n
+e P7p34 P7t266 1 n
+e P8p34 P8t266 1 n
+e P3p24 P3t269 1 n
+e P4p24 P4t269 1 n
+e P5p24 P5t269 1 n
+e P6p24 P6t269 1 n
+e P7p24 P7t269 1 n
+e P8p24 P8t269 1 n
+e P3p204 P3t114 1 n
+e P4p204 P4t114 1 n
+e P5p204 P5t114 1 n
+e P6p204 P6t114 1 n
+e P7p204 P7t114 1 n
+e P8p204 P8t114 1 n
+e P3t114 P3p203 1 n
+e P4t114 P4p203 1 n
+e P5t114 P5p203 1 n
+e P6t114 P6p203 1 n
+e P7t114 P7p203 1 n
+e P8t114 P8p203 1 n
+e P3t114 P3p204 1 n
+e P4t114 P4p204 1 n
+e P5t114 P5p204 1 n
+e P6t114 P6p204 1 n
+e P7t114 P7p204 1 n
+e P8t114 P8p204 1 n
+e P3p203 P3t113 3 n
+e P4p203 P4t113 3 n
+e P5p203 P5t113 3 n
+e P6p203 P6t113 3 n
+e P7p203 P7t113 3 n
+e P8p203 P8t113 3 n
+e P3p204 P3t112 1 n
+e P4p204 P4t112 1 n
+e P5p204 P5t112 1 n
+e P6p204 P6t112 1 n
+e P7p204 P7t112 1 n
+e P8p204 P8t112 1 n
+e P3t112 P3p204 1 n
+e P4t112 P4p204 1 n
+e P5t112 P5p204 1 n
+e P6t112 P6p204 1 n
+e P7t112 P7p204 1 n
+e P8t112 P8p204 1 n
+e P3t112 P3p203 4 n
+e P4t112 P4p203 4 n
+e P5t112 P5p203 4 n
+e P6t112 P6p203 4 n
+e P7t112 P7p203 4 n
+e P8t112 P8p203 4 n
+e P3p204 P3t116 1 n
+e P4p204 P4t116 1 n
+e P5p204 P5t116 1 n
+e P6p204 P6t116 1 n
+e P7p204 P7t116 1 n
+e P8p204 P8t116 1 n
+e P3t116 P3p204 1 n
+e P4t116 P4p204 1 n
+e P5t116 P5p204 1 n
+e P6t116 P6p204 1 n
+e P7t116 P7p204 1 n
+e P8t116 P8p204 1 n
+e P3p207 P3t116 1 n
+e P4p207 P4t116 1 n
+e P5p207 P5t116 1 n
+e P6p207 P6t116 1 n
+e P7p207 P7t116 1 n
+e P8p207 P8t116 1 n
+e P3t115 P3p205 1 n
+e P4t115 P4p205 1 n
+e P5t115 P5p205 1 n
+e P6t115 P6p205 1 n
+e P7t115 P7p205 1 n
+e P8t115 P8p205 1 n
+e P3p205 P3t115 1 n
+e P4p205 P4t115 1 n
+e P5p205 P5t115 1 n
+e P6p205 P6t115 1 n
+e P7p205 P7t115 1 n
+e P8p205 P8t115 1 n
+e P3t115 P3p207 4 se
+e P4t115 P4p207 4 se
+e P5t115 P5p207 4 se
+e P6t115 P6p207 4 se
+e P7t115 P7p207 4 se
+e P8t115 P8p207 4 se
+e P3p208 P3t117 1 n
+e P4p208 P4t117 1 n
+e P5p208 P5t117 1 n
+e P6p208 P6t117 1 n
+e P7p208 P7t117 1 n
+e P8p208 P8t117 1 n
+e P3t117 P3p216_ 1 n
+e P4t117 P4p216_ 1 n
+e P5t117 P5p216_ 1 n
+e P6t117 P6p216_ 1 n
+e P7t117 P7p216_ 1 n
+e P8t117 P8p216_ 1 n
+e P3t117 P3p208 1 n
+e P4t117 P4p208 1 n
+e P5t117 P5p208 1 n
+e P6t117 P6p208 1 n
+e P7t117 P7p208 1 n
+e P8t117 P8p208 1 n
+e P3p216_ P3t118 100 s
+e P4p216_ P4t118 100 s
+e P5p216_ P5t118 100 s
+e P6p216_ P6t118 100 s
+e P7p216_ P7t118 100 s
+e P8p216_ P8t118 100 s
+e P3t118 P3p209 1 n
+e P4t118 P4p209 1 n
+e P5t118 P5p209 1 n
+e P6t118 P6p209 1 n
+e P7t118 P7p209 1 n
+e P8t118 P8p209 1 n
+e P3p209 P3t119 1 n
+e P4p209 P4t119 1 n
+e P5p209 P5t119 1 n
+e P6p209 P6t119 1 n
+e P7p209 P7t119 1 n
+e P8p209 P8t119 1 n
+e P3p203 P3t119 1 n
+e P4p203 P4t119 1 n
+e P5p203 P5t119 1 n
+e P6p203 P6t119 1 n
+e P7p203 P7t119 1 n
+e P8p203 P8t119 1 n
+e P3p34 P3t112 5 n
+e P4p34 P4t112 5 n
+e P5p34 P5t112 5 n
+e P6p34 P6t112 5 n
+e P7p34 P7t112 5 n
+e P8p34 P8t112 5 n
+e P3t112 P3p34 4 n
+e P4t112 P4p34 4 n
+e P5t112 P5p34 4 n
+e P6t112 P6p34 4 n
+e P7t112 P7p34 4 n
+e P8t112 P8p34 4 n
+e P3t113 P3p31 1 n
+e P4t113 P4p31 1 n
+e P5t113 P5p31 1 n
+e P6t113 P6p31 1 n
+e P7t113 P7p31 1 n
+e P8t113 P8p31 1 n
+e P3p31 P3t113 1 n
+e P4p31 P4t113 1 n
+e P5p31 P5t113 1 n
+e P6p31 P6t113 1 n
+e P7p31 P7t113 1 n
+e P8p31 P8t113 1 n
+e P3p217 P3t121 1 n
+e P4p217 P4t121 1 n
+e P5p217 P5t121 1 n
+e P6p217 P6t121 1 n
+e P7p217 P7t121 1 n
+e P8p217 P8t121 1 n
+e P3t121 P3p219_ 1 n
+e P4t121 P4p219_ 1 n
+e P5t121 P5p219_ 1 n
+e P6t121 P6p219_ 1 n
+e P7t121 P7p219_ 1 n
+e P8t121 P8p219_ 1 n
+e P3t121 P3p217 1 n
+e P4t121 P4p217 1 n
+e P5t121 P5p217 1 n
+e P6t121 P6p217 1 n
+e P7t121 P7p217 1 n
+e P8t121 P8p217 1 n
+e P3p219_ P3t122 100 s
+e P4p219_ P4t122 100 s
+e P5p219_ P5t122 100 s
+e P6p219_ P6t122 100 s
+e P7p219_ P7t122 100 s
+e P8p219_ P8t122 100 s
+e P3t122 P3p218 1 n
+e P4t122 P4p218 1 n
+e P5t122 P5p218 1 n
+e P6t122 P6p218 1 n
+e P7t122 P7p218 1 n
+e P8t122 P8p218 1 n
+e P3p218 P3t120 1 n
+e P4p218 P4t120 1 n
+e P5p218 P5t120 1 n
+e P6p218 P6t120 1 n
+e P7p218 P7t120 1 n
+e P8p218 P8t120 1 n
+e P3p41 P3t120 1 n
+e P4p41 P4t120 1 n
+e P5p41 P5t120 1 n
+e P6p41 P6t120 1 n
+e P7p41 P7t120 1 n
+e P8p41 P8t120 1 n
+e P3p24 P3t115 1 n
+e P4p24 P4t115 1 n
+e P5p24 P5t115 1 n
+e P6p24 P6t115 1 n
+e P7p24 P7t115 1 n
+e P8p24 P8t115 1 n
+e P3p2 P3t12 1 n
+e P4p2 P4t12 1 n
+e P5p2 P5t12 1 n
+e P6p2 P6t12 1 n
+e P7p2 P7t12 1 n
+e P8p2 P8t12 1 n
+e P3t12 P3p2 1 n
+e P4t12 P4p2 1 n
+e P5t12 P5p2 1 n
+e P6t12 P6p2 1 n
+e P7t12 P7p2 1 n
+e P8t12 P8p2 1 n
+e P3t12 P3p1 1 n
+e P4t12 P4p1 1 n
+e P5t12 P5p1 1 n
+e P6t12 P6p1 1 n
+e P7t12 P7p1 1 n
+e P8t12 P8p1 1 n
+e P3p1 P3t188 1 n
+e P4p1 P4t188 1 n
+e P5p1 P5t188 1 n
+e P6p1 P6t188 1 n
+e P7p1 P7t188 1 n
+e P8p1 P8t188 1 n
+e P3p34 P3t4 1 n
+e P4p34 P4t4 1 n
+e P5p34 P5t4 1 n
+e P6p34 P6t4 1 n
+e P7p34 P7t4 1 n
+e P8p34 P8t4 1 n
+e P3p3 P3t4 1 n
+e P4p3 P4t4 1 n
+e P5p3 P5t4 1 n
+e P6p3 P6t4 1 n
+e P7p3 P7t4 1 n
+e P8p3 P8t4 1 n
+e P3t4 P3p3 1 n
+e P4t4 P4p3 1 n
+e P5t4 P5p3 1 n
+e P6t4 P6p3 1 n
+e P7t4 P7p3 1 n
+e P8t4 P8p3 1 n
+e P3t4 P3p4 4 n
+e P4t4 P4p4 4 n
+e P5t4 P5p4 4 n
+e P6t4 P6p4 4 n
+e P7t4 P7p4 4 n
+e P8t4 P8p4 4 n
+e P3p2 P3t30 1 n
+e P4p2 P4t30 1 n
+e P5p2 P5t30 1 n
+e P6p2 P6t30 1 n
+e P7p2 P7t30 1 n
+e P8p2 P8t30 1 n
+e P3t30 P3p2 1 n
+e P4t30 P4p2 1 n
+e P5t30 P5p2 1 n
+e P6t30 P6p2 1 n
+e P7t30 P7p2 1 n
+e P8t30 P8p2 1 n
+e P3p4 P3t30 1 n
+e P4p4 P4t30 1 n
+e P5p4 P5t30 1 n
+e P6p4 P6t30 1 n
+e P7p4 P7t30 1 n
+e P8p4 P8t30 1 n
+e P3p1 P3t254 3 n
+e P4p1 P4t254 3 n
+e P5p1 P5t254 3 n
+e P6p1 P6t254 3 n
+e P7p1 P7t254 3 n
+e P8p1 P8t254 3 n
+e P3t254 P3p1 2 n
+e P4t254 P4p1 2 n
+e P5t254 P5p1 2 n
+e P6t254 P6p1 2 n
+e P7t254 P7p1 2 n
+e P8t254 P8p1 2 n
+e P3p237 P3t17 1 n
+e P4p237 P4t17 1 n
+e P5p237 P5t17 1 n
+e P6p237 P6t17 1 n
+e P7p237 P7t17 1 n
+e P8p237 P8t17 1 n
+e P3t17 P3p237 1 n
+e P4t17 P4p237 1 n
+e P5t17 P5p237 1 n
+e P6t17 P6p237 1 n
+e P7t17 P7p237 1 n
+e P8t17 P8p237 1 n
+e at74 P6p65 1 n
+e a76 P6p65 1 n
+e at75 P5p65 1 n
+e at77 P7p65 1 n
+e P4t22 aP3P15_ 1 n
+e aP3P15_ P4t26 5 n
+e P4t26 aP3P15_ 4 n
+e P5t22 aP4P15_ 1 n
+e aP4P15_ P5t26 5 n
+e P5t26 aP4P15_ 4 n
+e P6t22 aP5P15_ 1 n
+e aP5P15_ P6t26 5 n
+e P6t26 aP5P15_ 4 n
+e P7t22 aP6P15_ 1 n
+e aP6P15_ P7t26 5 n
+e P7t26 aP6P15_ 4 n
+e P8t22 aP7P15_ 1 n
+e aP7P15_ P8t26 5 n
+e P8t26 aP7P15_ 4 n
+e P4p41 P4t59 2 n
+e P4p25 P4t59 2 n
+e P3p25 P3t59 2 n
+e P3p41 P3t59 2 n
+e P5p25 P5t59 2 n
+e P5p41 P5t59 2 n
+e P6p25 P6t59 2 n
+e P6p41 P6t59 2 n
+e P7p25 P7t59 2 n
+e P7p41 P7t59 2 n
+e P8p41 P8t59 2 n
+e P8p25 P8t59 2 n
+e at64 ap0_ 1 n
+e ap0_ at7 1 n
+e at7 P6p65 1 n
+e ap18 at18 1 n
+e at18 ap20_ 1 n
+e at18 ap18 1 n
+e ap20_ at19 100 s
+e at19 ap19 1 n
+e ap19 at17 1 n
+e ap21 at21 1 n
+e at21 ap23_ 1 n
+e at21 ap21 1 n
+e ap23_ at22 100 s
+e at22 ap22 1 n
+e ap22 at20 1 n
+e aP3p29_ at17 1 n
+e ap24 at24 1 n
+e at24 ap26_ 1 n
+e at24 ap24 1 n
+e ap26_ at25 100 s
+e at25 ap25 1 n
+e ap25 at23 1 n
+e aP3P15_ at20 1 n
+e aP4P15_ at23 1 n
+e ap27 at27 1 n
+e at27 ap29_ 1 n
+e at27 ap27 1 n
+e ap29_ at28 100 s
+e at28 ap28 1 n
+e ap28 at26 1 n
+e aP5P15_ at26 1 n
+e ap30 at30 1 n
+e at30 ap32_ 1 n
+e at30 ap30 1 n
+e ap32_ at31 100 s
+e at31 ap31 1 n
+e ap31 at29 1 n
+e ap33 at33 1 n
+e at33 ap35_ 1 n
+e at33 ap33 1 n
+e ap35_ at34 100 s
+e at34 ap34 1 n
+e ap34 at32 1 n
+e aP6P15_ at29 1 n
+e ap36 at36 1 n
+e at36 ap38_ 1 n
+e at36 ap36 1 n
+e ap38_ at37 100 s
+e at37 ap37 1 n
+e ap37 at35 1 n
+e aP8P15_ at35 1 n
+e aP7P15_ at32 1 n
+e P6t59 P6p41 1 n
+e P3t59 P3p41 1 n
+e P4t59 P4p41 1 n
+e P5t59 P5p41 1 n
+e P7t59 P7p41 1 n
+e P8t59 P8p41 1 n
+e P8t113 P8p203 2 n
+e P7t113 P7p203 2 n
+e P6t113 P6p203 2 n
+e P5t113 P5p203 2 n
+e P4t113 P4p203 2 n
+e P3t113 P3p203 2 n
+e ap0 at6 1 n
+e at6 ap0 1 n
+e at6 ap1 1 n
+e ap1 at8 1 n
+e ap2 at8 1 n
+e at8 ap2 1 n
+e ap2 at9 1 n
+e at9 ap3 2 n
+e P6t109 P6p65 1 n
+e P8t109 P8p65 1 n
+e P7t109 P7p65 1 n
+e P5t109 P5p65 1 n
+e P4t109 P4p65 1 n
+e P3t109 P3p65 1 n
+e P7p402 P7t401 1 n
+e P7t401 P7p402 1 n
+e P4p402 P4t401 1 n
+e P4t401 P4p402 1 n
+e P7p402 P7t211 1 n
+e P7t211 P7p402 1 n
+e P8p402 P8t401 1 n
+e P8t401 P8p402 1 n
+e P8p402 P8t211 1 n
+e P8t211 P8p402 1 n
+e P6p402 P6t401 1 n
+e P6t401 P6p402 1 n
+e P6p402 P6t211 1 n
+e P6t211 P6p402 1 n
+e P5p402 P5t401 1 n
+e P5t401 P5p402 1 n
+e P5p402 P5t211 1 n
+e P5t211 P5p402 1 n
+e P4p402 P4t211 1 n
+e P4t211 P4p402 1 n
+e P3p402 P3t401 1 n
+e P3t401 P3p402 1 n
+e P3p402 P3t211 1 n
+e P3t211 P3p402 1 n
+e P3t162 P3p6_ 2 n
+e P3p6_ P3t109 1 n
+e P4t162 P4p6_ 2 n
+e P4p6_ P4t109 1 n
+e P5t162 P5p6_ 2 n
+e P5p6_ P5t109 1 n
+e P6t162 P6p6_ 2 n
+e P6p6_ P6t109 1 n
+e P7t162 P7p6_ 2 n
+e P7p6_ P7t109 1 n
+e P8t162 P8p6_ 2 n
+e ap3 P3t162 1 n
+e ap3 P4t162 1 n
+e ap3 P5t162 1 n
+e ap3 P6t162 1 n
+e ap3 P7t162 1 n
+e ap3 P8t162 1 n
+e P8p6_ P8t109 1 n
+e at9 ap2 1 n
+e ap14 at44 1 n
+e at44 ap15_ 1 n
+e at44 ap14 1 n
+e ap14 at45 1 n
+e at45 ap2 1 n
+e ap15_ at45 100 n
+e P8p41 P8t50 8 n
+e P8t50 P8p34 2 n
+e P8t50 P8p41 6 n
+e P7p41 P7t50 8 n
+e P7t50 P7p34 2 n
+e P7t50 P7p41 6 n
+e P6p41 P6t50 8 n
+e P6t50 P6p41 6 n
+e P6t50 P6p34 2 n
+e P5p41 P5t50 8 n
+e P5t50 P5p41 6 n
+e P5t50 P5p34 2 n
+e P4p41 P4t50 8 n
+e P4t50 P4p41 6 n
+e P4t50 P4p34 2 n
+e P3t50 P3p41 6 n
+e P3p41 P3t50 8 n
+e P3t50 P3p34 2 n
+h {celegans6cells-ac6-complete} small
+
+

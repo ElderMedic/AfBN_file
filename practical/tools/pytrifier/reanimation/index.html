@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+    
+    <head>
+        <title>Pytrifier Re-Animator</title>
+		
+		<link href="reanimation/css/cupertino/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css"/>
+		
+		<!-- jQuery API -->
+		<script type="text/javascript" src="reanimation/js/min/jquery-1.6.2.min.js"></script>
+		
+		<!-- jQuery User Interface Widgets -->
+		<script type="text/javascript" src="reanimation/js/min/jquery-ui-1.8.16.custom.min.js"></script>
+        
+        <!-- JSON support for IE (needed to use JS API) -->
+        <script type="text/javascript" src="reanimation/js/min/json2.min.js"></script>
+        
+        <!-- Flash embedding utility (needed to embed Cytoscape Web) -->
+        <script type="text/javascript" src="reanimation/js/min/AC_OETags.min.js"></script>
+        
+        <!-- Cytoscape Web JS API (needed to reference org.cytoscapeweb.Visualization) -->
+        <script type="text/javascript" src="reanimation/js/min/cytoscapeweb.min.js"></script>
+        
+		<script type="text/javascript" id="pytrifier-data"></script>
+		
+        <script type="text/javascript">
+		//<![CDATA[
+			var vis;
+			var current_marking = 0;
+			var transition_sizes = {};
+			var play_id = null;
+			
+			function playback(speed, disable) {
+				play_id = window.setInterval(function() {
+					if ($("#slider").slider("value") >= marking_max - 1)
+						stop_playback(true);
+					else
+						$("#slider").slider("value", $("#slider").slider("value")+1);
+				}, speed);
+				if (disable) {
+					$("#marking").attr("disabled", "disabled");
+					$("#slider").slider('disable');
+					$("#go").button('disable');
+					$("#play").button('disable');
+					$("#pause").button('enable');
+				}
+			}
+			
+			function stop_playback(disable) {
+				clearInterval(play_id);
+				play_id = null;
+				if (disable) {
+					$("#marking").removeAttr("disabled");
+					$("#slider").slider('enable');
+					$("#go").button('enable');
+					$("#play").button('enable');
+					$("#pause").button('disable');
+				}
+			}
+			
+			function build_transitions_size(window) {
+				// Initialize the transitions_sizes table with all transition having delta = 0
+				$.each(network_data.nodes, function(i, v) {
+					if (v.transition) {
+						transition_sizes[v.id] = {};
+						transition_sizes[v.id]['count'] = [];
+						transition_sizes[v.id]['prob'] = [];
+					}
+				});
+				// Compute the number of times a transition has been fired the past window# steps
+				$.each(firings_data, function(i, d) {
+					for (var t in transition_sizes) {
+						var count = 0;
+						for (var j = 0; j < window; j++) {
+							var idx = i-j;
+							if (idx < 0)
+								continue;
+							$.each(firings_data[idx], function(j, x) { if (x === t) count++; });
+						}
+						transition_sizes[t]['count'].push(count);
+						transition_sizes[t]['prob'].push(count/window);
+					}
+				});
+			}
+			
+			$(document).ready(function() {
+			
+				build_transitions_size(5);
+				
+				$("#controls").dialog({
+					closeOnEscape: false,
+					open: function(event, ui) { $(".ui-dialog-titlebar-close").hide(); },
+					width: 380,
+					position: ['right','top'],
+					title: 'Reanimator Controls',
+					show: 'fade',
+					dialogClass: 'alert',
+					resizable: false,
+					draggable: true
+				});
+				
+				$("#marking-invalid-dialog").dialog({
+					show: 'fade',
+					autoOpen: false,
+					dialogClass: 'alert',
+					modal: true,
+					resizable: false,
+					minWidth: 300,
+					draggable: false
+				});
+				$("#go").button();
+				$("#go").click(function() {
+						var value = $("#marking").attr("value");
+						var num = parseInt(value) - 1;
+						if ((parseFloat(value) == parseInt(value)) && !isNaN(value) && num >= 0 && num < marking_max) {
+							$("#slider").slider("value", num);
+						} else {
+							$("#marking").attr("value", current_marking + 1);
+							$("#marking-invalid-dialog").dialog("open");
+						}
+					});
+				
+				$("#playback").buttonset();
+				$("#pause").button('disable');
+				
+				$('#play').click(function() {
+					playback(1000 - $("#speed").slider("value"), true);
+				});
+				
+				$('#pause').click(function() {
+					stop_playback(true);
+				});
+				
+				$("#slider").slider({
+					min: 0,
+					max: marking_max - 1,
+					range: "min",
+					slide: function(event, ui) {
+						$("#marking").attr("value", ui.value + 1);
+						current_marking = ui.value;
+						vis.visualStyle(vis.visualStyle());
+					},
+					change: function(event, ui) {
+						$("#marking").attr("value", ui.value + 1);
+						current_marking = ui.value;
+						vis.visualStyle(vis.visualStyle());
+					}
+				});
+				
+				$("#speed").slider({
+					min: 1,
+					max: 999,
+					step: 100,
+					range: "min",
+					value: 501,
+					slide: function(event, ui) {
+						if (play_id != null) {
+							stop_playback(false);
+							playback(1000 - ui.value, false);
+						}
+					}
+				});
+			});
+		
+            window.onload=function() {
+                // id of Cytoscape Web container div
+                var div_id = "cytoscapeweb";
+				
+				// initialization options
+                var options = {
+                    // where you have the Cytoscape Web SWF
+                    swfPath: "reanimation/swf/CytoscapeWeb",
+                    // where you have the Flash installer SWF
+                    flashInstallerPath: "reanimation/swf/playerProductInstall"
+                };
+				
+				// init
+                vis = new org.cytoscapeweb.Visualization(div_id, options);
+				
+				vis["customLabel"] = function (data) {
+					if (data['place'] == true) {
+						return data['id'];
+					}
+					return '';
+				};
+				
+				vis["customColor"] = function (data) {
+					if (data['transition'])
+						return "#f5f5f5";
+					// Interpolate the color of the place with its marking, normalized by network capacity
+					var scale = markings_data[data['id']][current_marking]/network_capacity;
+					var r = Math.round(Math.min(255, Math.max(0, 245 + scale * (255 - 245)))).toString(16);
+					var g = Math.round(Math.min(255, Math.max(0, 245 + scale * (0 - 245)))).toString(16);
+					var b = Math.round(Math.min(255, Math.max(0, 245 + scale * (0 - 245))));
+					var dec2hex = function(number) {return (number < 0x10 ? '0' : '') + number.toString(16)}
+					return "#"
+					+ dec2hex(r)
+					+ dec2hex(g)
+					+ dec2hex(b);
+				};
+				
+				vis["customBorderColor"] = function (data) {
+					if (data['place'])
+						return "#666666";
+					// last marking doesn't know the next firing sequence
+					if (current_marking >= marking_max - 1)
+						return "#666666";
+					// the next firing sequence is drawn for the current marking
+					if (jQuery.inArray(data['id'], firings_data[current_marking + 1]) > -1)
+						return "#6666FF";
+					return "#666666";
+				};
+				
+				vis["customSize"] = function (data) {
+					if (data['place'])
+						return 24;
+					// Interpolate the size of the place with his computed probability
+					// Max size is 35, min size is 15
+					return Math.round(Math.min(35, Math.max(15, 24 + transition_sizes[data['id']]['prob'][current_marking] * (35 - 24))));
+				};
+				
+				var style = {
+					global: {},
+					nodes: {
+						shape: "ELLIPSE",
+						borderColor: { customMapper: { functionName: "customBorderColor" }},
+						size: { customMapper: { functionName: "customSize" }},
+						label: { customMapper: { functionName: "customLabel" }},
+						color: { customMapper: { functionName: "customColor" }},
+						shape: { discreteMapper: {
+												attrName: "transition",
+												entries: [
+													{attrValue: true, value: "RECTANGLE"},
+													{attrValue: false, value: "ELLIPSE"}]
+												}
+								},
+						tooltipText: "<b>${label}</b>: ${strength}"
+					},
+					edges: {
+						color: "#999999",
+						width: 1,
+						label: { passthroughMapper: { attrName: "weight" } },
+						targetArrowShape: "ARROW",
+						labelFontSize: 10
+					}
+				};
+				
+                // you could also use other formats (e.g. GraphML) or grab the network data via AJAX
+                var networ_json = {
+					dataSchema: {
+					    nodes: [ { name: "strength", type: "int" },
+								 { name: "x", type: "number" },
+								 { name: "y", type: "number" },
+								 { name: "place", type: "boolean" },
+								 { name: "transition", type: "boolean" }
+           		         	],
+						edges: [ { name: "weight", type: "int" },
+							     { name: "bar", type: "string" }
+							]
+                    	},
+                    data: network_data
+                };
+                
+                vis.draw({ network: networ_json, layout: {name: "Preset", options: { fitToScreen: true, points: network_data.nodes}}, visualStyle: style }).ready();
+			}
+			//]]>
+        </script>
+        
+        <style type="text/css">
+			/*<![CDATA[*/
+            /* The Cytoscape Web container must have its dimensions set. */
+            html, body { height: 100%; width: 100%; padding: 0; margin: 0; }
+			#cytoscapeweb { width: 100%; height: 100%; }
+			#slider { margin-right: 15px; margin-left: 10px; margin-bottom: 30px; margin-top: 15px; }
+			#goto { margin-bottom: 30px; vertical-align: middle; }
+			#animation { margin-left: 10px; width: 100px};
+			#speed { width: 100%;}
+			/*]]>*/
+        </style>
+    </head>
+    
+    <body>
+        <div id="cytoscapeweb">
+            Cytoscape Web will replace the contents of this div with your graph!
+        </div>
+		<div id="controls">
+			<div>
+				<div>Current Marking</div>
+				<div id="slider"></div>
+				<div id="goto">
+					<input id="marking" type="text" value="1" style="vertical-align:middle;"/>
+					<input type="submit" id="go" style="font-size: small; vertical-align:middle;" value="Go" />
+					<div id="marking-invalid-dialog" title="Invalid Marking">The marking number entered is invalid!</div>
+				</div>
+				<div id="playback">
+					<input class="small-button" type="radio" id="play" name="playback" /><label for="play">Play</label>
+					<input type="radio" id="pause" name="playback" checked="checked" /><label for="pause">Pause</label>
+					<div id="animation" style="display: inline-block; vertical-align:middle;" >
+						<div style="font-size: small; margin-bottom: 5px;">Speed</div>
+						<div id="speed"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+    
+</html>
